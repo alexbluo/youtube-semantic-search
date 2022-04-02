@@ -1,0 +1,18 @@
+{
+  "name": "forfeit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "start": "cd backend && node app.js",
+    "heroku-postbuild": "cd frontend && yarn --production=false && yarn run build",
+    "dev": "concurrently -i \"cd frontend && yarn dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  }
+}

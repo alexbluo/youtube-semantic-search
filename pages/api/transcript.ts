@@ -5,19 +5,13 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const process = spawn("python", ["./scripts/transcript.py"]);
+  const process = spawn("python", ["./scripts/transcript.py", /** req.query.v */]);
 
   process.stdout.on("data", (data) => {
-    console.log(data.toString("utf8"));
+    res.json(data);
   });
 
   process.stderr.on("data", (data) => {
-    console.log(data.toString("utf8"));
+    res.json(data);
   });
-
-  process.stderr.on("close", () => {
-    console.log("Closed");
-  });
-  
-  res.json({ captions: "hi" });
 }

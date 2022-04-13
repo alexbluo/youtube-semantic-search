@@ -1,5 +1,5 @@
-import { Configuration, OpenAIApi } from "openai";
 import type { NextApiRequest, NextApiResponse } from "next";
+import { Configuration, OpenAIApi } from "openai";
 
 export default async function handler(
   req: NextApiRequest,
@@ -10,6 +10,7 @@ export default async function handler(
   });
   const openai = new OpenAIApi(configuration);
 
+  // run multiple queries with promise.all and averaging?
   const response = await openai.createSearch("babbage", {
     documents: ["buhmbooo"],
     query: "buhmbo",

@@ -1,45 +1,54 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import type { NextPage } from "next";
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 import { useRouter } from "next/router";
-import ReactPlayer from "react-player/youtube";
+import classNames from "classnames";
 import Head from "next/head";
-import Image from "next/image";
-import "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
   const router = useRouter();
   const [link, setLink] = useState("");
   const [isValidLink, setIsValidLink] = useState(false);
-  
-  function handleLinkInput(event: ChangeEvent<HTMLInputElement>) {
+
+  async function handleLinkInput(event: ChangeEvent<HTMLInputElement>) {
     const value = event.target.value;
     setLink(value);
 
-    setIsValidLink(
-      !!value.match(
-        /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/
-      )
-    );
-  }
+    if (value.length === 0) return;
 
-  async function handleLinkSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    if (!isValidLink) return;
+    const linkIsYoutubeURL = !!value.match(
+      /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/
+    );
+
+    if (!linkIsYoutubeURL) {
+      setIsValidLink(false);
+      return;
+    }
 
     // get video id from url query params
-    const params = new URL(link).searchParams;
+    const params = new URL(value).searchParams;
     const videoID = params.get("v");
 
     // redirect if link is valid and video exists
     const res = await axios.get(
       `https://www.googleapis.com/youtube/v3/videos?id=${videoID}&key=${process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}`
     );
-    if (res.data.items.length !== 0) {
-      router.push(`/watch?v=${videoID}`);
-    } else {
+
+    if (res.data.items.length === 0) {
       setIsValidLink(false);
+      return;
     }
+
+    setIsValidLink(true);
+  }
+
+  function handleLinkSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    // get video id from url query params and redirect
+    const params = new URL(link).searchParams;
+    const videoID = params.get("v");
+    router.push(`/watch?v=${videoID}`);
   }
 
   return (
@@ -59,7 +68,14 @@ const Home: NextPage = () => {
               aria-describedby="button-addon1"
               onChange={handleLinkInput}
             />
-            <button className="btn btn-primary" type="submit">
+            <button
+              className={classNames(
+                "btn",
+                { "btn-primary": isValidLink },
+                { "btn-secondary disabled": !isValidLink }
+              )}
+              type="submit"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -75,7 +91,6 @@ const Home: NextPage = () => {
               </svg>
             </button>
           </form>
-          {!isValidLink && <label className="text-danger">Invalid link</label>}
         </div>
       </div>
     </div>

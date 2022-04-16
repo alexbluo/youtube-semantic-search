@@ -44,6 +44,7 @@ const Home: NextPage = () => {
 
   function handleLinkSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (!isValidLink) return;
 
     // get video id from url query params and redirect
     const params = new URL(link).searchParams;

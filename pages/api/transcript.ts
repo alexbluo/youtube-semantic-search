@@ -1,11 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { spawn } from "child_process";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  const process = spawn("python", ["./scripts/transcript.py", /** req.query.v */]);
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+  const process = spawn("python", ["./scripts/transcript.py", "40hln85PONY"]);
 
   process.stdout.on("data", (data) => {
     res.json(data);
@@ -14,4 +11,6 @@ export default async function handler(
   process.stderr.on("data", (data) => {
     res.json(data);
   });
-}
+};
+
+export default handler;

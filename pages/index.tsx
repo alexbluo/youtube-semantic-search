@@ -1,9 +1,9 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import type { NextPage } from "next";
 import axios from "axios";
-import { useRouter } from "next/router";
 import classNames from "classnames";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -14,7 +14,10 @@ const Home: NextPage = () => {
     const value = event.target.value;
     setLink(value);
 
-    if (value.length === 0) return;
+    if (value.length === 0) {
+      setIsValidLink(false);
+      return;
+    }
 
     const linkIsYoutubeURL = !!value.match(
       /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/
@@ -53,8 +56,9 @@ const Home: NextPage = () => {
   }
 
   return (
-    <div className="container py-5">
-      <div className="d-flex flex-column align-items-center justify-content-center w-100 vh-100">
+    <div className="container py-5 w-100 vh-100">
+      <div className="d-flex flex-column align-items-center justify-content-center h-100">
+        <h1>Appositus</h1>
         <div className="w-25">
           <form
             className="input-group w-100"

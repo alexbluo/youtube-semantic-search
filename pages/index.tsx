@@ -22,7 +22,7 @@ const Home: NextPage = () => {
     const linkIsYoutubeURL = !!value.match(
       /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/
     );
-
+    
     if (!linkIsYoutubeURL) {
       setIsValidLink(false);
       return;

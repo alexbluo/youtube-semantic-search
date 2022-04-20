@@ -48,22 +48,22 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     //   });
     // }
 
-    const {
-      data: { id },
-    } = await openai.createFile(fs.createReadStream("temp.jsonl"), "search");
+    // const {
+    //   data: { id },
+    // } = await openai.createFile(fs.createReadStream("temp.jsonl"), "search");
 
     // fs.unlink("temp.jsonl", (err) => {
     //   if (err) console.error(err);
     // });
 
     const response = await openai.createSearch("babbage", {
-      file: id,
+      file: "file-APu7uBRhGsl4LRFdUhPtfNZn",
       query: "language",
       return_metadata: true,
       max_rerank: 400,
     });
-
-    await openai.deleteFile(id);
+    // console.log(id)
+    // openai.deleteFile(id).catch(err => console.log(err));
 
     console.log(response.data);
   });

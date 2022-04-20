@@ -1,0 +1,68 @@
+{"text":"common business oriented language or","metadata":"start: 0, duration: 3.78"}
+{"text":"boring things on dinosaur mainframes it","metadata":"start: 5.58, duration: 4.95"}
+{"text":"was developed over 100 years ago in 1959","metadata":"start: 7.919, duration: 4.831"}
+{"text":"language used by coat grinders to do","metadata":"start: 3.78, duration: 4.139"}
+{"text":"but is still in demand today in 2020","metadata":"start: 10.53, duration: 3.81"}
+{"text":"because it's the language used on many","metadata":"start: 12.75, duration: 3.449"}
+{"text":"mainframe computer systems you know","metadata":"start: 14.34, duration: 3.81"}
+{"text":"those things we call big iron usually","metadata":"start: 16.199, duration: 3.901"}
+{"text":"built by IBM to handle massive amounts","metadata":"start: 18.15, duration: 3.36"}
+{"text":"COBOL is a weak verbose and flabby","metadata":"start: 1.8, duration: 3.78"}
+{"text":"credit card transactions airline","metadata":"start: 21.51, duration: 3.599"}
+{"text":"ticketing and most recently the massive","metadata":"start: 23.13, duration: 3.96"}
+{"text":"spike in unemployment claims so if you","metadata":"start: 25.109, duration: 3.901"}
+{"text":"want to be a programmer in 2020 COBOL","metadata":"start: 27.09, duration: 3.359"}
+{"text":"might be your best bet it's a high-level","metadata":"start: 29.01, duration: 3.179"}
+{"text":"very easy to learn the syntax is","metadata":"start: 32.189, duration: 3.661"}
+{"text":"imperative language which means it's","metadata":"start: 30.449, duration: 3.571"}
+{"text":"extremely verbose by design because it's","metadata":"start: 34.02, duration: 3.69"}
+{"text":"600 reserved words for you to memorize","metadata":"start: 37.71, duration: 4.02"}
+{"text":"self documenting and it contains over","metadata":"start: 35.85, duration: 3.72"}
+{"text":"program is structured with an","metadata":"start: 41.73, duration: 3.21"}
+{"text":"easy-to-follow hierarchy your program","metadata":"start: 43.2, duration: 3.33"}
+{"text":"to take advantage of and every COBOL","metadata":"start: 39.57, duration: 3.63"}
+{"text":"contains many divisions which contain","metadata":"start: 44.94, duration: 2.939"}
+{"text":"that contain your statements which of","metadata":"start: 49.53, duration: 3.419"}
+{"text":"course contain many characters when you","metadata":"start: 51.329, duration: 3.031"}
+{"text":"start writing some COBOL code you'll","metadata":"start: 52.949, duration: 2.971"}
+{"text":"notice these vertical lines in your IDE","metadata":"start: 54.36, duration: 3.3"}
+{"text":"paragraphs which contain many sentences","metadata":"start: 47.879, duration: 3.45"}
+{"text":"many sections which contain many","metadata":"start: 46.53, duration: 3"}
+{"text":"the first six characters are your line","metadata":"start: 55.92, duration: 3.51"}
+{"text":"numbers start at zero zero zero one","metadata":"start: 57.66, duration: 3.75"}
+{"text":"line column seven is where you identify","metadata":"start: 61.41, duration: 3.569"}
+{"text":"hundred and increment by 100 for each","metadata":"start: 59.43, duration: 3.539"}
+{"text":"of throughput to handle things like","metadata":"start: 20.1, duration: 3.03"}
+{"text":"division section or paragraph we can use","metadata":"start: 66.96, duration: 3.6"}
+{"text":"comments or the continuation of a","metadata":"start: 62.969, duration: 3.991"}
+{"text":"every line ends with a period that's","metadata":"start: 70.56, duration: 3.27"}
+{"text":"columns 12 through 72 are where you","metadata":"start: 73.83, duration: 3.6"}
+{"text":"previous line if we're identifying a new","metadata":"start: 64.979, duration: 3.781"}
+{"text":"you don't go beyond 72 columns is","metadata":"start: 77.43, duration: 3.24"}
+{"text":"write your actual statements the reason","metadata":"start: 75.75, duration: 3.27"}
+{"text":"because your code needs to fit onto a","metadata":"start: 79.02, duration: 3.45"}
+{"text":"program is responsive on mobile devices","metadata":"start: 82.47, duration: 3.84"}
+{"text":"division first we name the variable then","metadata":"start: 86.31, duration: 3.629"}
+{"text":"we can define our variables in the data","metadata":"start: 84.479, duration: 3.841"}
+{"text":"we define its data type with the picture","metadata":"start: 88.32, duration: 3.659"}
+{"text":"keyword then assign a value to it we can","metadata":"start: 89.939, duration: 3.121"}
+{"text":"then work with this data in the","metadata":"start: 91.979, duration: 2.491"}
+{"text":"physical punch card and it ensures your","metadata":"start: 80.67, duration: 3.809"}
+{"text":"procedure division we display the","metadata":"start: 93.06, duration: 3.09"}
+{"text":"variable then tell our program to stop","metadata":"start: 94.47, duration: 3.21"}
+{"text":"from there we can pile our program to a","metadata":"start: 96.15, duration: 3.45"}
+{"text":"binary run it and everything should work","metadata":"start: 97.68, duration: 4.02"}
+{"text":"perfectly and now you're qualified for a","metadata":"start: 99.6, duration: 3.6"}
+{"text":"six-figure salary maintaining the","metadata":"start: 101.7, duration: 3.239"}
+{"text":"world's most critical legacy systems","metadata":"start: 103.2, duration: 4.23"}
+{"text":"this has been COBOL in 100 seconds hit","metadata":"start: 104.939, duration: 3.631"}
+{"text":"the like button if you want to see more","metadata":"start: 107.43, duration: 2.61"}
+{"text":"short videos like this thanks for","metadata":"start: 108.57, duration: 3.27"}
+{"text":"watching and I will see you in the next","metadata":"start: 110.04, duration: 4.469"}
+{"text":"one oh hey there thanks for sticking","metadata":"start: 111.84, duration: 3.9"}
+{"text":"around this is the part of the video","metadata":"start: 114.509, duration: 3"}
+{"text":"where we go beyond 100 seconds to","metadata":"start: 115.74, duration: 3.089"}
+{"text":"what's known as readable code now","metadata":"start: 72.18, duration: 3.57"}
+{"text":"columns 8 through 11 and notice how","metadata":"start: 68.76, duration: 3.42"}
+{"text":"learned some more advanced features of","metadata":"start: 117.509, duration: 3.68"}
+{"text":"COBOL","metadata":"start: 118.829, duration: 2.36"}

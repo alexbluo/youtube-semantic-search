@@ -7,7 +7,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   });
   const openai = new OpenAIApi(configuration);
 
-  // run multiple queries with promise.all and averaging?
   const response = await openai.createSearch("babbage", {
     documents: ["buhmbooo"],
     query: "buhmbo",

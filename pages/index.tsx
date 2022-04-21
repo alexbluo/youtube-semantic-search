@@ -4,6 +4,7 @@ import axios from "axios";
 import classNames from "classnames";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import normalizeURL from "normalize-url";
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -14,29 +15,29 @@ const Home: NextPage = () => {
     const value = event.target.value;
     setLink(value);
 
+    // in case text is inputted and fully deleted
     if (value.length === 0) {
       setIsValidLink(false);
       return;
     }
 
+    // regex to match all kinds of youtube urls
     const linkIsYoutubeURL = !!value.match(
       /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/
     );
-    
     if (!linkIsYoutubeURL) {
       setIsValidLink(false);
       return;
     }
 
-    // get video id from url query params
-    const params = new URL(value).searchParams;
+    // get video id from url query params after normalizing to add https header so URL() works
+    const params = new URL(normalizeURL(value)).searchParams;
     const videoID = params.get("v");
 
-    // redirect if link is valid and video exists
+    // check if video exists
     const res = await axios.get(
       `https://www.googleapis.com/youtube/v3/videos?id=${videoID}&key=${process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}`
     );
-
     if (res.data.items.length === 0) {
       setIsValidLink(false);
       return;
@@ -50,9 +51,9 @@ const Home: NextPage = () => {
     if (!isValidLink) return;
 
     // get video id from url query params and redirect
-    const params = new URL(link).searchParams;
+    const params = new URL(normalizeURL(link)).searchParams;
     const videoID = params.get("v");
-    router.push(`/watch?v=${videoID}`);
+    router.push({ pathname: "/watch", query: { v: videoID } });
   }
 
   return (

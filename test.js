@@ -4,7 +4,7 @@ const { Configuration, OpenAIApi } = require("openai");
 // deletes files
 (async () => {
   const configuration = new Configuration({
-    apiKey: "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", // woah openai immediately replaced the key after pushing to github
+    apiKey: "",
   });
   const openai = new OpenAIApi(configuration);
 

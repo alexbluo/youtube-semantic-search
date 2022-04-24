@@ -33,37 +33,40 @@ const Watch: NextPage = ({
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
-  });
-  const openai = new OpenAIApi(configuration);
+  // const configuration = new Configuration({
+  //   apiKey: process.env.OPENAI_API_KEY,
+  // });
+  // const openai = new OpenAIApi(configuration);
 
-  const pyscript = spawnSync("python", [
-    "./scripts/transcript.py",
-    context.query.v as string,
-  ]);
+  // const pyscript = spawnSync("python", [
+  //   "./scripts/transcript.py",
+  //   context.query.v as string,
+  // ]);
 
-  const transcript: Transcript = JSON.parse(pyscript.stdout.toString());
+  // const transcript: Transcript = JSON.parse(pyscript.stdout.toString());
 
-  for (let i = 0; i < transcript.length; i += 200) {
-    // 200 is the maximum number of documents allowed per query
-    const slice = transcript.slice(i, i + 200);
-    // extract the text property from slice
-    const documents = slice.map(({ text }) => text);
+  // for (let i = 0; i < transcript.length; i += 200) {
+  //   // 200 is the maximum number of documents allowed per query
+  //   const slice = transcript.slice(i, i + 200);
+  //   // extract the text property from slice
+  //   const documents = slice.map(({ text }) => text);
 
-    const {
-      // shorthand for response.data.data
-      data: { data },
-    } = await openai.createSearch("babbage", {
-      documents: documents,
-      query: "language",
-    });
+  //   const {
+  //     // shorthand for response.data.data
+  //     data: { data },
+  //   } = await openai.createSearch("babbage", {
+  //     documents: documents,
+  //     query: "language",
+  //   });
 
-    // calculate z scores and assign to each corresponding transcript section
-    const zscores = zscore(data!.map(({ score }) => score!));
-    zscores.forEach((zs, i) => (transcript[i].zscore = zs));
-  }
+  //   // calculate z scores and assign to each corresponding transcript section
+  //   const zscores = zscore(data!.map(({ score }) => score!));
+  //   zscores.forEach((zs, i) => (transcript[i].zscore = zs));
+  // }
 
+  // sample for dev
+  const transcript: Transcript = sample;
+  
   return {
     props: {
       transcript

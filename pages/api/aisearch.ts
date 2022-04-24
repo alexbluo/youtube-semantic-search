@@ -12,6 +12,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     query: "buhmbo",
     return_metadata: true,
   });
+  
 
   res.json(response.data);
 };

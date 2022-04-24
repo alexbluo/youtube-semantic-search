@@ -1,604 +1,3306 @@
+/**
+ * video id: cuHDQhDhvPE
+ * last commit confirmed working for both sample and real: 
+ */
 const scores = [
   {
-    text: 'which javascript framework is the best',
+    text: "which javascript framework is the best",
     start: 0.08,
     duration: 4.4,
-    zscore: 2.553716909812807
+    zscore: -0.10957807256813136,
   },
   {
-    text: 'if we go off of downloads react wins but',
+    text: "if we go off of downloads react wins but",
     start: 2.08,
     duration: 4.56,
-    zscore: -1.4687610285968233
+    zscore: -1.416777978088232,
   },
   {
-    text: 'based on github stars view is the best',
+    text: "based on github stars view is the best",
     start: 4.48,
     duration: 4,
-    zscore: 1.2399965525675107
+    zscore: -0.1673706293988057,
   },
   {
-    text: 'but svelt is the most loved framework',
+    text: "but svelt is the most loved framework",
     start: 6.64,
     duration: 4.079,
-    zscore: -0.2639942018275513
+    zscore: -1.4665317623645533,
   },
   {
-    text: 'according to the 2021 stack overflow',
+    text: "according to the 2021 stack overflow",
     start: 8.48,
     duration: 3.68,
-    zscore: 0.3066549769370233
+    zscore: 0.5942919668491482,
   },
   {
-    text: 'survey and some people out there might',
+    text: "survey and some people out there might",
     start: 10.719,
     duration: 2.721,
-    zscore: -0.360432252408746
+    zscore: -1.063049779142675,
   },
   {
     text: "even tell you that you don't need a",
     start: 12.16,
     duration: 2.8,
-    zscore: -1.0014894437423996
+    zscore: -0.5418952661817984,
   },
   {
     text: "javascript framework and whether you're",
     start: 13.44,
     duration: 3.12,
-    zscore: 2.7958583681879614
+    zscore: 1.338589037855378,
   },
   {
-    text: 'a new developer or have 20 years of',
+    text: "a new developer or have 20 years of",
     start: 14.96,
     duration: 3.36,
-    zscore: 0.6728846507527153
+    zscore: 1.1785908161589287,
   },
   {
-    text: 'experience it can be very difficult to',
+    text: "experience it can be very difficult to",
     start: 16.56,
     duration: 3.28,
-    zscore: 0.17230595813071392
+    zscore: -1.389130818336382,
   },
   {
-    text: 'choose which framework you want to marry',
+    text: "choose which framework you want to marry",
     start: 18.32,
     duration: 2.799,
-    zscore: 0.5169204395929841
+    zscore: 0.9793758200674862,
   },
   {
-    text: 'which is the single most important',
+    text: "which is the single most important",
     start: 19.84,
     duration: 2.8,
-    zscore: -1.1341778325303011
+    zscore: 0.5542979630635403,
   },
   {
     text: "decision you'll make related to your",
     start: 21.119,
     duration: 3.441,
-    zscore: -0.4773514065503036
+    zscore: 0.5230533415608473,
   },
   {
     text: "frontend code there's no absolute best",
     start: 22.64,
     duration: 3.36,
-    zscore: 1.057016726230267
+    zscore: -1.9538434870026835,
   },
   {
-    text: 'framework and the only way to find out',
+    text: "framework and the only way to find out",
     start: 24.56,
     duration: 3.2,
-    zscore: 0.39512740385268463
+    zscore: 0.5906278854362527,
   },
   {
-    text: 'which one will make you happy is to',
+    text: "which one will make you happy is to",
     start: 26,
     duration: 3.199,
-    zscore: -1.3536105129301552
+    zscore: -1.7660204531222439,
   },
   {
-    text: 'build something with all of them in',
+    text: "build something with all of them in",
     start: 27.76,
     duration: 3.2,
-    zscore: -0.3602027344387222
+    zscore: -0.6495748466128992,
   },
   {
     text: "today's video we'll build the same app",
     start: 29.199,
     duration: 3.681,
-    zscore: 0.5620544733453197
+    zscore: 1.9646251054411445,
   },
   {
-    text: 'with 10 different javascript frameworks',
+    text: "with 10 different javascript frameworks",
     start: 30.96,
     duration: 5.119,
-    zscore: 2.161281684243216
+    zscore: 0.9500964785953463,
   },
   {
-    text: 'including angular react vue svelt lit',
+    text: "including angular react vue svelt lit",
     start: 32.88,
     duration: 6.4,
-    zscore: -0.5207573049989304
+    zscore: 0.3586249123378969,
   },
   {
-    text: 'alpine solid stencil mithril and vanilla',
+    text: "alpine solid stencil mithril and vanilla",
     start: 36.079,
     duration: 4.401,
-    zscore: -3.631022822077327
+    zscore: 0.8447374830590794,
   },
   {
     text: "in the process you'll learn the",
     start: 39.28,
     duration: 2.48,
-    zscore: 0.2095958777310583
+    zscore: -1.5188504036299015,
   },
   {
-    text: 'trade-offs between each of these',
+    text: "trade-offs between each of these",
     start: 40.48,
     duration: 2.72,
-    zscore: 0.05059392873277585
+    zscore: -0.3931335608182297,
   },
   {
-    text: 'frameworks so you can make the best',
+    text: "frameworks so you can make the best",
     start: 41.76,
     duration: 3.52,
-    zscore: 1.4819759982579424
+    zscore: 0.6311992596263168,
   },
   {
-    text: 'choice for your next project this video',
+    text: "choice for your next project this video",
     start: 43.2,
     duration: 3.679,
-    zscore: 1.6027159515475442
+    zscore: 0.8546416061509068,
   },
   {
-    text: 'was a ton of work so make sure to',
+    text: "was a ton of work so make sure to",
     start: 45.28,
     duration: 3.2,
-    zscore: -1.7683359837061794
+    zscore: 0.44365380767109647,
   },
   {
-    text: 'subscribe and hit the like button then',
+    text: "subscribe and hit the like button then",
     start: 46.879,
     duration: 3.041,
-    zscore: -0.36257892048132184
+    zscore: 0.10028496617472683,
   },
   {
-    text: 'leave a comment below with your favorite',
+    text: "leave a comment below with your favorite",
     start: 48.48,
     duration: 2.96,
-    zscore: 0.0665116750067824
+    zscore: 0.6047290472373968,
   },
   {
     text: "framework and i'll choose a few random",
     start: 49.92,
     duration: 3.6,
-    zscore: 1.7689544671301076
+    zscore: -1.0948828743268333,
   },
   {
-    text: 'ones to win a free t-shirt next week the',
+    text: "ones to win a free t-shirt next week the",
     start: 51.44,
     duration: 3.84,
-    zscore: -2.126856553940482
+    zscore: -0.12154740518359079,
   },
   {
     text: "first thing we'll do is build a basic",
     start: 53.52,
     duration: 3.84,
-    zscore: 1.021238925020668
+    zscore: 0.3331539948797667,
   },
   {
-    text: 'to-do app with vanilla javascript about',
+    text: "to-do app with vanilla javascript about",
     start: 55.28,
     duration: 4.24,
-    zscore: 0.5330272006658335
+    zscore: 0.6329313708396854,
   },
   {
-    text: 'once a year a hot take will go viral',
+    text: "once a year a hot take will go viral",
     start: 57.36,
     duration: 3.839,
-    zscore: -2.0932119197463988
+    zscore: -0.5539423217363194,
   },
   {
     text: "saying that you don't need a javascript",
     start: 59.52,
     duration: 3.199,
-    zscore: 0.48675907812043895
+    zscore: 0.6898578720636754,
   },
   {
-    text: 'framework at all any expert web',
+    text: "framework at all any expert web",
     start: 61.199,
     duration: 3.121,
-    zscore: 1.291678598994056
+    zscore: 0.17554297774020433,
   },
   {
-    text: 'developer needs to have a solid',
+    text: "developer needs to have a solid",
     start: 62.719,
     duration: 3.921,
-    zscore: 1.0653063752652459
+    zscore: 1.8815503868614891,
   },
   {
-    text: 'understanding of vanilla js but even if',
+    text: "understanding of vanilla js but even if",
     start: 64.32,
     duration: 4.159,
-    zscore: 0.22971245275079524
+    zscore: 0.33526361751143396,
   },
   {
     text: "you're a javascript god attempting to",
     start: 66.64,
     duration: 3.92,
-    zscore: 0.2198701821538903
+    zscore: 0.0017544859988565295,
   },
   {
-    text: 'build a non-trivial app with it is a',
+    text: "build a non-trivial app with it is a",
     start: 68.479,
     duration: 4,
-    zscore: 0.3719190867661561
+    zscore: 0.5739507633690724,
   },
   {
     text: "recipe for disaster what you'll end up",
     start: 70.56,
     duration: 3.44,
-    zscore: -1.90515569595451
+    zscore: -0.9174969208346423,
   },
   {
-    text: 'doing is building your own shitty',
+    text: "doing is building your own shitty",
     start: 72.479,
     duration: 3.041,
-    zscore: -1.10662217507038
+    zscore: -0.11368628506137804,
   },
   {
-    text: 'javascript framework and the last thing',
+    text: "javascript framework and the last thing",
     start: 74,
     duration: 3.36,
-    zscore: 3.124703615003887
+    zscore: 0.9528945044015574,
   },
   {
-    text: 'the world needs is another javascript',
+    text: "the world needs is another javascript",
     start: 75.52,
     duration: 3.599,
-    zscore: 1.05181881926208
+    zscore: 1.246809350100843,
   },
   {
-    text: 'framework to build an app from scratch',
+    text: "framework to build an app from scratch",
     start: 77.36,
     duration: 4.399,
-    zscore: 1.6796719767908324
+    zscore: -0.14317658879668477,
   },
   {
-    text: 'all we have to do is create an html file',
+    text: "all we have to do is create an html file",
     start: 79.119,
     duration: 4.561,
-    zscore: 1.5025921123889077
+    zscore: 0.10908986484268539,
   },
   {
-    text: 'then add a script tag to the body what',
+    text: "then add a script tag to the body what",
     start: 81.759,
     duration: 3.68,
-    zscore: 0.572477289395814
+    zscore: 0.294636726936326,
   },
   {
-    text: 'we want to build here is a to do app',
+    text: "we want to build here is a to do app",
     start: 83.68,
     duration: 3.92,
-    zscore: 0.5250345748861799
+    zscore: -2.514037121926413,
   },
   {
-    text: 'where the user can write some text into',
+    text: "where the user can write some text into",
     start: 85.439,
     duration: 4.32,
-    zscore: 1.4601312879344965
+    zscore: 0.5645018746346048,
   },
   {
-    text: 'a form input then submit the form and',
+    text: "a form input then submit the form and",
     start: 87.6,
     duration: 4.159,
-    zscore: -0.30692756327907006
+    zscore: -0.6195737921351889,
   },
   {
-    text: 'have that item appear in the list in',
+    text: "have that item appear in the list in",
     start: 89.759,
     duration: 4.081,
-    zscore: -0.1811112125348236
+    zscore: 0.06854069720663873,
   },
   {
     text: "addition we'll save those items to local",
     start: 91.759,
     duration: 4.4,
-    zscore: 0.10794641912461639
+    zscore: -1.2398139491223745,
   },
   {
-    text: 'storage as kind of a mock database so',
+    text: "storage as kind of a mock database so",
     start: 93.84,
     duration: 4.16,
-    zscore: -0.09145069259786229
+    zscore: 1.1053980141170836,
   },
   {
-    text: 'that when the user refreshes the page',
+    text: "that when the user refreshes the page",
     start: 96.159,
     duration: 3.841,
-    zscore: -0.40582280624522593
+    zscore: 0.9322313058882271,
   },
   {
-    text: 'those items are still present pretty',
+    text: "those items are still present pretty",
     start: 98,
     duration: 3.759,
-    zscore: -0.4533060239260411
+    zscore: 0.16098658158170026,
   },
   {
     text: "simple concept but there's actually a",
     start: 100,
     duration: 4.159,
-    zscore: -0.923345325477811
+    zscore: -0.44463055958492864,
   },
   {
-    text: 'lot going on there like state management',
+    text: "lot going on there like state management",
     start: 101.759,
     duration: 4.801,
-    zscore: -1.070547350605456
+    zscore: -1.2766324156834727,
   },
   {
-    text: 'data binding events and the application',
+    text: "data binding events and the application",
     start: 104.159,
     duration: 4.32,
-    zscore: 0.15574016111781652
+    zscore: -0.8243293234540106,
   },
   {
-    text: 'life cycle to think about the one thing',
+    text: "life cycle to think about the one thing",
     start: 106.56,
     duration: 4,
-    zscore: -1.0810916761694924
+    zscore: 1.5797189046549467,
   },
   {
-    text: 'that all frameworks do and vanilla js',
+    text: "that all frameworks do and vanilla js",
     start: 108.479,
     duration: 4.561,
-    zscore: 0.5463527439842769
+    zscore: -0.6111686114395463,
   },
   {
     text: "doesn't is provide a way to bind or",
     start: 110.56,
     duration: 4.8,
-    zscore: -0.39525147856706894
+    zscore: -0.5901167982309087,
   },
   {
-    text: 'connect your html to the javascript',
+    text: "connect your html to the javascript",
     start: 113.04,
     duration: 4.399,
-    zscore: 1.084248358320743
+    zscore: -0.5762821150779749,
   },
   {
-    text: 'automatically in vanilla we need to',
+    text: "automatically in vanilla we need to",
     start: 115.36,
     duration: 4.24,
-    zscore: -0.5399828102526922
+    zscore: 0.9028631382000168,
   },
   {
-    text: 'imperatively grab the html elements that',
+    text: "imperatively grab the html elements that",
     start: 117.439,
     duration: 3.921,
-    zscore: -0.10524877291341339
+    zscore: 0.07644623043688664,
   },
   {
     text: "we're working with from the dom and i",
     start: 119.6,
     duration: 3.44,
-    zscore: 0.18966831751016466
+    zscore: -1.7677636676126216,
   },
   {
-    text: 'can tell you right now this is a very',
+    text: "can tell you right now this is a very",
     start: 121.36,
     duration: 3.439,
-    zscore: -0.40024686967935263
+    zscore: 1.9392319109220757,
   },
   {
-    text: 'annoying way to build a complex',
+    text: "annoying way to build a complex",
     start: 123.04,
     duration: 3.52,
-    zscore: -0.39558900499357463
+    zscore: -1.2239362629998263,
   },
   {
-    text: 'application as you can see here in the',
+    text: "application as you can see here in the",
     start: 124.799,
     duration: 4.001,
-    zscore: 0.5604748496692733
+    zscore: 0.2537508561499759,
   },
   {
-    text: 'dom we have an unordered list for the to',
+    text: "dom we have an unordered list for the to",
     start: 126.56,
     duration: 4.8,
-    zscore: 0.5680084395088794
+    zscore: -0.8427497903432536,
   },
   {
     text: "do's and then below that we have a form",
     start: 128.8,
     duration: 4.96,
-    zscore: -1.1217568600348933
+    zscore: -0.23997274484375794,
   },
   {
-    text: 'with an input and a button to submit the',
+    text: "with an input and a button to submit the",
     start: 131.36,
     duration: 4.56,
-    zscore: 0.0262650239102486
+    zscore: -0.9177768166157659,
   },
   {
-    text: 'form now going into the javascript the',
+    text: "form now going into the javascript the",
     start: 133.76,
     duration: 4.32,
-    zscore: 1.157950628812517
+    zscore: -0.8966226823018205,
   },
   {
     text: "first thing i'll do is write some code",
     start: 135.92,
     duration: 4.72,
-    zscore: 1.757856598226602
+    zscore: -1.397892574609093,
   },
   {
-    text: 'using document query selector to grab',
+    text: "using document query selector to grab",
     start: 138.08,
     duration: 4.64,
-    zscore: 0.9494943078026268
+    zscore: 1.1592104635233818,
   },
   {
-    text: 'each one of these items from the dom now',
+    text: "each one of these items from the dom now",
     start: 140.64,
     duration: 4.319,
-    zscore: -1.343444216963805
+    zscore: 2.8776535560181813,
   },
   {
-    text: 'that we have access to the html elements',
+    text: "that we have access to the html elements",
     start: 142.72,
     duration: 4.32,
-    zscore: -0.12267863757816519
+    zscore: 0.6400419669092681,
   },
   {
     text: "i'm setting up an empty array here to",
     start: 144.959,
     duration: 4.241,
-    zscore: 0.8518141599718915
+    zscore: 0.42531320108503295,
   },
   {
-    text: 'represent the actual to-do items in the',
+    text: "represent the actual to-do items in the",
     start: 147.04,
     duration: 4,
-    zscore: -0.08735987230861383
+    zscore: 1.564789567964932,
   },
   {
-    text: 'list in addition to keeping track of the',
+    text: "list in addition to keeping track of the",
     start: 149.2,
     duration: 4.24,
-    zscore: -0.7060188099793523
+    zscore: 0.9325629162923843,
   },
   {
-    text: 'data we also need to update the actual',
+    text: "data we also need to update the actual",
     start: 151.04,
     duration: 4.72,
-    zscore: 0.49391463836235877
+    zscore: -0.3415343838938402,
   },
   {
     text: "ui when that data changes for that i'm",
     start: 153.44,
     duration: 4.879,
-    zscore: 0.3775895307314513
+    zscore: 0.8976374814044538,
   },
   {
-    text: 'defining a function called add to do',
+    text: "defining a function called add to do",
     start: 155.76,
     duration: 4.4,
-    zscore: 1.1324066288545693
+    zscore: 0.46504701292906325,
   },
   {
-    text: 'that takes a new to-do item as its',
+    text: "that takes a new to-do item as its",
     start: 158.319,
     duration: 3.441,
-    zscore: -1.1920568641474905
+    zscore: -1.37064964567935,
   },
   {
-    text: 'argument now this is where things start',
+    text: "argument now this is where things start",
     start: 160.16,
     duration: 3.6,
-    zscore: -0.2979493603340198
+    zscore: 0.7903275843501956,
   },
   {
-    text: 'to get ugly with vanilla in order to',
+    text: "to get ugly with vanilla in order to",
     start: 161.76,
     duration: 4.72,
-    zscore: -1.6853584870140297
+    zscore: -1.8350870980736103,
   },
   {
-    text: 'update the ui we need to manually create',
+    text: "update the ui we need to manually create",
     start: 163.76,
     duration: 4.8,
-    zscore: 0.44845657924057775
+    zscore: -0.11327950385598791,
   },
   {
-    text: 'a new list item element by calling',
+    text: "a new list item element by calling",
     start: 166.48,
     duration: 4.16,
-    zscore: -0.23520994817514926
+    zscore: 0.06984746440974512,
   },
   {
-    text: 'document create element then we need to',
+    text: "document create element then we need to",
     start: 168.56,
     duration: 4.48,
-    zscore: 0.9063584304952046
+    zscore: -0.42718615244895264,
   },
   {
-    text: 'imperatively update its inner html to',
+    text: "imperatively update its inner html to",
     start: 170.64,
     duration: 4.8,
-    zscore: -0.35612541520653385
+    zscore: -1.399077642017537,
   },
   {
-    text: 'the to-do text and finally append it to',
+    text: "the to-do text and finally append it to",
     start: 173.04,
     duration: 4.64,
-    zscore: -0.7550141460509127
+    zscore: -0.03299459230003497,
   },
   {
-    text: 'the unordered list in the dom and as an',
+    text: "the unordered list in the dom and as an",
     start: 175.44,
     duration: 4.48,
-    zscore: -0.29302147450703736
+    zscore: -0.18016089437850713,
   },
   {
     text: "added touch i'll save the data to local",
     start: 177.68,
     duration: 4.24,
-    zscore: -0.22764935622142266
+    zscore: -0.5765318888418042,
   },
   {
-    text: 'storage so we can access it when the',
+    text: "storage so we can access it when the",
     start: 179.92,
     duration: 3.76,
-    zscore: -0.40425668362623973
+    zscore: -0.1236454383137551,
   },
   {
-    text: 'page is refreshed the problem with this',
+    text: "page is refreshed the problem with this",
     start: 181.92,
     duration: 4,
-    zscore: 0.6213106127826519
+    zscore: -0.9756271761980754,
   },
   {
-    text: 'code is that the application data or',
+    text: "code is that the application data or",
     start: 183.68,
     duration: 4.4,
-    zscore: 0.4702607863928426
+    zscore: -1.9370573810576384,
   },
   {
-    text: 'state is completely decoupled from the',
+    text: "state is completely decoupled from the",
     start: 185.92,
     duration: 4.319,
-    zscore: -0.3154332292270126
+    zscore: -0.14311051103405656,
   },
   {
-    text: 'ui itself and that makes it very hard to',
+    text: "ui itself and that makes it very hard to",
     start: 188.08,
     duration: 4.4,
-    zscore: -0.7438082686909251
+    zscore: 0.24852021379546502,
   },
   {
-    text: 'keep the data in sync with the ui now',
+    text: "keep the data in sync with the ui now",
     start: 190.239,
     duration: 3.761,
-    zscore: -1.4014717602086566
+    zscore: 1.0973145289950057,
   },
   {
-    text: 'that we have this function in place we',
+    text: "that we have this function in place we",
     start: 192.48,
     duration: 3.36,
-    zscore: -0.49472726698681463
+    zscore: -0.11585396063984854,
   },
   {
-    text: 'need a way to call it when the user',
+    text: "need a way to call it when the user",
     start: 194,
     duration: 3.92,
-    zscore: -0.41203329249293
+    zscore: -0.7633638954419821,
   },
   {
-    text: 'submits the form for that we need to',
+    text: "submits the form for that we need to",
     start: 195.84,
     duration: 3.84,
-    zscore: 0.027318106360946275
+    zscore: -0.5575844317711678,
   },
-]
+  {
+    text: "register an event listener on the",
+    start: 197.92,
+    duration: 4.08,
+    zscore: 0.47347869943281873,
+  },
+  {
+    text: "forum's on submit event when that event",
+    start: 199.68,
+    duration: 4,
+    zscore: -1.4223294818590726,
+  },
+  {
+    text: "is fired we'll first call prevent",
+    start: 202,
+    duration: 3.519,
+    zscore: 2.963550510933661,
+  },
+  {
+    text: "default to prevent it from refreshing",
+    start: 203.68,
+    duration: 3.68,
+    zscore: -0.3518322110292831,
+  },
+  {
+    text: "the page then call the add to do",
+    start: 205.519,
+    duration: 4,
+    zscore: 1.2180143256182323,
+  },
+  {
+    text: "function with the current value in the",
+    start: 207.36,
+    duration: 4.239,
+    zscore: 0.2640623047498837,
+  },
+  {
+    text: "text input at this point we should have",
+    start: 209.519,
+    duration: 3.921,
+    zscore: 0.4129312898864648,
+  },
+  {
+    text: "a working to-do list but one important",
+    start: 211.599,
+    duration: 3.441,
+    zscore: -0.6301323515110735,
+  },
+  {
+    text: "thing to notice here is that if you look",
+    start: 213.44,
+    duration: 3.84,
+    zscore: 0.9879341693420871,
+  },
+  {
+    text: "at the html markup you really have no",
+    start: 215.04,
+    duration: 4.16,
+    zscore: 0.29183647079375663,
+  },
+  {
+    text: "idea what it's doing there's no way to",
+    start: 217.28,
+    duration: 3.44,
+    zscore: 0.0058129599603841025,
+  },
+  {
+    text: "tell this form has an event listener",
+    start: 219.2,
+    duration: 3.2,
+    zscore: 0.638993114145473,
+  },
+  {
+    text: "attached to it unless you go search",
+    start: 220.72,
+    duration: 3.28,
+    zscore: 0.18444484495270955,
+  },
+  {
+    text: "through the javascript code itself which",
+    start: 222.4,
+    duration: 3.52,
+    zscore: -0.9397891031909983,
+  },
+  {
+    text: "is extremely difficult in a complex",
+    start: 224,
+    duration: 3.84,
+    zscore: -1.5681745018844524,
+  },
+  {
+    text: "application now one final thing to think",
+    start: 225.92,
+    duration: 4,
+    zscore: -0.4133195016237134,
+  },
+  {
+    text: "about is the application lifecycle when",
+    start: 227.84,
+    duration: 3.84,
+    zscore: 0.43582897165191364,
+  },
+  {
+    text: "the app is first initialized what we",
+    start: 229.92,
+    duration: 4.08,
+    zscore: -1.0060847707415281,
+  },
+  {
+    text: "want to do here is grab the existing",
+    start: 231.68,
+    duration: 4.96,
+    zscore: -0.49030801877916713,
+  },
+  {
+    text: "to-do items from the local storage and",
+    start: 234,
+    duration: 4.319,
+    zscore: -0.19627508684045006,
+  },
+  {
+    text: "render them in the to-do list if they",
+    start: 236.64,
+    duration: 3.679,
+    zscore: -2.077195007472237,
+  },
+  {
+    text: "exist if there are existing to-do's in",
+    start: 238.319,
+    duration: 3.84,
+    zscore: -0.1940003022748165,
+  },
+  {
+    text: "local storage we can loop over them with",
+    start: 240.319,
+    duration: 3.521,
+    zscore: 0.02071484208495349,
+  },
+  {
+    text: "four each and call the add to do",
+    start: 242.159,
+    duration: 3.121,
+    zscore: 0.22199922248236045,
+  },
+  {
+    text: "function for each one of them",
+    start: 243.84,
+    duration: 3.44,
+    zscore: 0.11335442191054507,
+  },
+  {
+    text: "congratulations you just built a to-do",
+    start: 245.28,
+    duration: 4.48,
+    zscore: 0.829107893681685,
+  },
+  {
+    text: "app with vanilla js but this code is not",
+    start: 247.28,
+    duration: 4.48,
+    zscore: -1.2544994181873905,
+  },
+  {
+    text: "going to scale complexity very well and",
+    start: 249.76,
+    duration: 3.6,
+    zscore: 0.7103695879413996,
+  },
+  {
+    text: "there's likely many other features we'd",
+    start: 251.76,
+    duration: 4,
+    zscore: 0.6145562068954933,
+  },
+  {
+    text: "want to add like routing or animation",
+    start: 253.36,
+    duration: 4.24,
+    zscore: -0.5559498560353832,
+  },
+  {
+    text: "that we'd have to implement from scratch",
+    start: 255.76,
+    duration: 3.039,
+    zscore: 0.02271719736128968,
+  },
+  {
+    text: "and that's why the vast majority of",
+    start: 257.6,
+    duration: 2.8,
+    zscore: -0.22241467714853871,
+  },
+  {
+    text: "developers choose to build their apps",
+    start: 258.799,
+    duration: 3.441,
+    zscore: 2.0252631741999148,
+  },
+  {
+    text: "with a framework first we have react",
+    start: 260.4,
+    duration: 3.2,
+    zscore: 0.9239269078216555,
+  },
+  {
+    text: "which most people would consider the",
+    start: 262.24,
+    duration: 3.04,
+    zscore: -0.27951585618528013,
+  },
+  {
+    text: "most popular framework some people call",
+    start: 263.6,
+    duration: 3.12,
+    zscore: -1.1179987227849126,
+  },
+  {
+    text: "it a library but it doesn't really",
+    start: 265.28,
+    duration: 3.12,
+    zscore: 0.9180288137083663,
+  },
+  {
+    text: "matter because it's a tool that becomes",
+    start: 266.72,
+    duration: 3.36,
+    zscore: 0.6375492389121963,
+  },
+  {
+    text: "the main driver of your project",
+    start: 268.4,
+    duration: 3.44,
+    zscore: -1.5523463601762715,
+  },
+  {
+    text: "requiring you the developer to do",
+    start: 270.08,
+    duration: 3.44,
+    zscore: 0.33197892657173306,
+  },
+  {
+    text: "everything the react way i don't mean",
+    start: 271.84,
+    duration: 3.44,
+    zscore: 1.2348640771612782,
+  },
+  {
+    text: "that in a bad way because react was",
+    start: 273.52,
+    duration: 3.76,
+    zscore: 0.24995046756427677,
+  },
+  {
+    text: "created by very smart people at facebook",
+    start: 275.28,
+    duration: 4.16,
+    zscore: -0.2769141564724896,
+  },
+  {
+    text: "to build complex uis like the facebook",
+    start: 277.28,
+    duration: 4.88,
+    zscore: 1.11114031542685,
+  },
+  {
+    text: "ui react is minimal by design and relies",
+    start: 279.44,
+    duration: 4.8,
+    zscore: -0.9620329546621337,
+  },
+  {
+    text: "on the open source community to handle",
+    start: 282.16,
+    duration: 4.56,
+    zscore: -0.334464843836572,
+  },
+  {
+    text: "other concerns like routing animation",
+    start: 284.24,
+    duration: 4.399,
+    zscore: -1.166858915820407,
+  },
+  {
+    text: "state management and so on it's not",
+    start: 286.72,
+    duration: 3.68,
+    zscore: -0.3201623061484567,
+  },
+  {
+    text: "opinionated about how you organize your",
+    start: 288.639,
+    duration: 3.521,
+    zscore: 0.5813334550656717,
+  },
+  {
+    text: "code which requires you to make a lot of",
+    start: 290.4,
+    duration: 3.6,
+    zscore: -0.8310898167613234,
+  },
+  {
+    text: "decisions about which libraries to bring",
+    start: 292.16,
+    duration: 3.599,
+    zscore: -0.27980190693904244,
+  },
+  {
+    text: "in and how to make things maintainable",
+    start: 294,
+    duration: 3.919,
+    zscore: -0.18663108999932104,
+  },
+  {
+    text: "and scalable react is by far the most",
+    start: 295.759,
+    duration: 4,
+    zscore: -2.679427194393138,
+  },
+  {
+    text: "popular framework with over 10 million",
+    start: 297.919,
+    duration: 5.12,
+    zscore: -0.48619433651077604,
+  },
+  {
+    text: "weekly downloads on npm and over 170 000",
+    start: 299.759,
+    duration: 5.44,
+    zscore: 0.39206320632628144,
+  },
+  {
+    text: "github stars its popularity alone makes",
+    start: 303.039,
+    duration: 3.761,
+    zscore: -0.15249570005035296,
+  },
+  {
+    text: "it a great skill to learn because there",
+    start: 305.199,
+    duration: 3.201,
+    zscore: -1.0655424631306925,
+  },
+  {
+    text: "are many employers out there looking to",
+    start: 306.8,
+    duration: 3.52,
+    zscore: 0.04184173346996928,
+  },
+  {
+    text: "hire react developers and you'll find",
+    start: 308.4,
+    duration: 3.6,
+    zscore: -0.5429549789358957,
+  },
+  {
+    text: "tons of other react developers in the",
+    start: 310.32,
+    duration: 3.84,
+    zscore: -0.2941316875560874,
+  },
+  {
+    text: "industry to collaborate with react has",
+    start: 312,
+    duration: 4.639,
+    zscore: -0.24029965999091488,
+  },
+  {
+    text: "an official cli called create react app",
+    start: 314.16,
+    duration: 4.319,
+    zscore: 0.28446725851826116,
+  },
+  {
+    text: "we can create a new react project by",
+    start: 316.639,
+    duration: 3.521,
+    zscore: 0.4450234601657021,
+  },
+  {
+    text: "running the create react app command",
+    start: 318.479,
+    duration: 3.601,
+    zscore: -1.152106869804951,
+  },
+  {
+    text: "from the terminal now it's worth noting",
+    start: 320.16,
+    duration: 3.84,
+    zscore: 0.8336847057418816,
+  },
+  {
+    text: "that many people opt for other tools",
+    start: 322.08,
+    duration: 4,
+    zscore: -1.0022980036202938,
+  },
+  {
+    text: "when building a react project like next",
+    start: 324,
+    duration: 4.24,
+    zscore: 0.9810280868583972,
+  },
+  {
+    text: "js or gatsby that would replace the",
+    start: 326.08,
+    duration: 4,
+    zscore: -0.2685233343621288,
+  },
+  {
+    text: "default cli when you generate a new",
+    start: 328.24,
+    duration: 3.519,
+    zscore: 0.3070925109944128,
+  },
+  {
+    text: "project with create react app you'll",
+    start: 330.08,
+    duration: 3.679,
+    zscore: -0.8806855688779207,
+  },
+  {
+    text: "notice it has a package json and the",
+    start: 331.759,
+    duration: 3.44,
+    zscore: 1.5152210587772645,
+  },
+  {
+    text: "root of the project inside of which",
+    start: 333.759,
+    duration: 3.201,
+    zscore: 0.13994352054597428,
+  },
+  {
+    text: "there's a start script to serve the app",
+    start: 335.199,
+    duration: 3.761,
+    zscore: -0.969306816686375,
+  },
+  {
+    text: "locally under the hood it uses a tool",
+    start: 336.96,
+    duration: 4,
+    zscore: -1.5735822232770063,
+  },
+  {
+    text: "called webpack to bundle all your code",
+    start: 338.96,
+    duration: 4.16,
+    zscore: 2.518319323434869,
+  },
+  {
+    text: "together into a single javascript file",
+    start: 340.96,
+    duration: 4.4,
+    zscore: -0.8281884448303058,
+  },
+  {
+    text: "in react and most other frameworks your",
+    start: 343.12,
+    duration: 4.56,
+    zscore: 0.4852612661949327,
+  },
+  {
+    text: "application is organized as a tree of",
+    start: 345.36,
+    duration: 4.16,
+    zscore: -0.5301235594099867,
+  },
+  {
+    text: "components these components encapsulate",
+    start: 347.68,
+    duration: 3.76,
+    zscore: -0.32381285862504233,
+  },
+  {
+    text: "parts of the ui and have ways to",
+    start: 349.52,
+    duration: 3.6,
+    zscore: -0.8151527033374237,
+  },
+  {
+    text: "communicate with each other this allows",
+    start: 351.44,
+    duration: 2.96,
+    zscore: 0.45703759182371884,
+  },
+  {
+    text: "you to organize your app in a",
+    start: 353.12,
+    duration: 3.44,
+    zscore: -0.3759558245965706,
+  },
+  {
+    text: "declarative way where for a given set of",
+    start: 354.4,
+    duration: 4.16,
+    zscore: -0.9483433828749377,
+  },
+  {
+    text: "application data the end result of the",
+    start: 356.56,
+    duration: 4.24,
+    zscore: -0.20707690816109328,
+  },
+  {
+    text: "ui will always be the same now in the",
+    start: 358.56,
+    duration: 4.32,
+    zscore: -1.1712858917714903,
+  },
+  {
+    text: "app.js file you'll first notice a",
+    start: 360.8,
+    duration: 4,
+    zscore: 0.6611824797587486,
+  },
+  {
+    text: "function called app that function",
+    start: 362.88,
+    duration: 4.08,
+    zscore: -0.09231607004455059,
+  },
+  {
+    text: "represents a component in the ui and",
+    start: 364.8,
+    duration: 4.239,
+    zscore: 1.6015402790911555,
+  },
+  {
+    text: "personally i love the simplicity of that",
+    start: 366.96,
+    duration: 4.239,
+    zscore: -0.541116081233138,
+  },
+  {
+    text: "now the return value of the function is",
+    start: 369.039,
+    duration: 5.361,
+    zscore: 1.2237217192290135,
+  },
+  {
+    text: "jsx which itself looks like html but has",
+    start: 371.199,
+    duration: 5.28,
+    zscore: 2.0951957727625645,
+  },
+  {
+    text: "been extended with an additional syntax",
+    start: 374.4,
+    duration: 4.16,
+    zscore: 1.1213155493821092,
+  },
+  {
+    text: "allowing you to insert javascript into",
+    start: 376.479,
+    duration: 4.241,
+    zscore: -0.019386749299628366,
+  },
+  {
+    text: "your html for the to-do list we can",
+    start: 378.56,
+    duration: 4.32,
+    zscore: -2.3160337653992946,
+  },
+  {
+    text: "define reactive state on the component",
+    start: 380.72,
+    duration: 4.319,
+    zscore: 0.3826780173099851,
+  },
+  {
+    text: "with the use state hook the hook is just",
+    start: 382.88,
+    duration: 4.319,
+    zscore: 0.03375058357783566,
+  },
+  {
+    text: "a function that will return us with two",
+    start: 385.039,
+    duration: 4.321,
+    zscore: -0.033089942551289137,
+  },
+  {
+    text: "values the first item is the value of",
+    start: 387.199,
+    duration: 4.481,
+    zscore: -1.045777718192164,
+  },
+  {
+    text: "the to-do list as reactive state which",
+    start: 389.36,
+    duration: 4.8,
+    zscore: -0.649597424231375,
+  },
+  {
+    text: "means any time it's updated the ui will",
+    start: 391.68,
+    duration: 4.48,
+    zscore: 0.060680218824886556,
+  },
+  {
+    text: "re-render to show the latest state and",
+    start: 394.16,
+    duration: 4.159,
+  },
+  {
+    text: "then the second item is a function to",
+    start: 396.16,
+    duration: 3.92,
+  },
+  {
+    text: "update the state now if we go back down",
+    start: 398.319,
+    duration: 4.32,
+  },
+  {
+    text: "to the jsx we can loop over the to do",
+    start: 400.08,
+    duration: 4.72,
+  },
+  {
+    text: "items in the array and render them out",
+    start: 402.639,
+    duration: 4.801,
+  },
+  {
+    text: "directly in the ui as a list item then",
+    start: 404.8,
+    duration: 5.119,
+  },
+  {
+    text: "below that we have an html form but the",
+    start: 407.44,
+    duration: 4.4,
+  },
+  {
+    text: "cool thing about react is that we can",
+    start: 409.919,
+    duration: 4.081,
+  },
+  {
+    text: "bind an event directly to this form",
+    start: 411.84,
+    duration: 4.079,
+  },
+  {
+    text: "using on submit then on the right side",
+    start: 414,
+    duration: 3.919,
+  },
+  {
+    text: "of it we can reference a function that",
+    start: 415.919,
+    duration: 4.081,
+  },
+  {
+    text: "will be called whenever the submit event",
+    start: 417.919,
+    duration: 4.161,
+  },
+  {
+    text: "fires and that function will update the",
+    start: 420,
+    duration: 4.24,
+  },
+  {
+    text: "state and store the result and local",
+    start: 422.08,
+    duration: 3.839,
+  },
+  { text: "storage you'll also notice that i'm", start: 424.24, duration: 4 },
+  {
+    text: "using the usref hook to grab the current",
+    start: 425.919,
+    duration: 4.481,
+  },
+  {
+    text: "value of the form input one thing to",
+    start: 428.24,
+    duration: 4.56,
+  },
+  {
+    text: "notice here is that the html is a lot",
+    start: 430.4,
+    duration: 4.079,
+  },
+  {
+    text: "more descriptive we know exactly which",
+    start: 432.8,
+    duration: 3.519,
+  },
+  {
+    text: "elements our data and events are bound",
+    start: 434.479,
+    duration: 3.681,
+  },
+  {
+    text: "to now the final thing we need to do",
+    start: 436.319,
+    duration: 4.16,
+  },
+  {
+    text: "here is run a life cycle hook in react",
+    start: 438.16,
+    duration: 4.08,
+  },
+  {
+    text: "that can be handled with the use effect",
+    start: 440.479,
+    duration: 3.28,
+  },
+  { text: "hook which will grab the items from", start: 442.24, duration: 3.2 },
+  {
+    text: "local storage when the component is",
+    start: 443.759,
+    duration: 3.601,
+  },
+  { text: "first initialized this hook can be", start: 445.44, duration: 3.44 },
+  {
+    text: "really confusing though if you're just",
+    start: 447.36,
+    duration: 3.279,
+  },
+  {
+    text: "getting started to only run it when the",
+    start: 448.88,
+    duration: 3.759,
+  },
+  {
+    text: "component is first initialized i need to",
+    start: 450.639,
+    duration: 4.241,
+  },
+  {
+    text: "add an array as the second argument and",
+    start: 452.639,
+    duration: 3.921,
+  },
+  {
+    text: "in my opinion this code is just really",
+    start: 454.88,
+    duration: 3.36,
+  },
+  {
+    text: "hard to look at unless you really know",
+    start: 456.56,
+    duration: 3.44,
+  },
+  {
+    text: "what's going on with the use effect hook",
+    start: 458.24,
+    duration: 3.92,
+  },
+  {
+    text: "in any case react is the gold standard",
+    start: 460,
+    duration: 4.08,
+  },
+  { text: "for declarative ui frameworks but", start: 462.16, duration: 3.68 },
+  {
+    text: "there's more than one way to get the job",
+    start: 464.08,
+    duration: 4.239,
+  },
+  {
+    text: "done next we have react's arch nemesis",
+    start: 465.84,
+    duration: 3.919,
+  },
+  { text: "angular which is developed and", start: 468.319, duration: 3.6 },
+  {
+    text: "maintained by google and unlike react is",
+    start: 469.759,
+    duration: 4.241,
+  },
+  {
+    text: "very opinionated about how to organize",
+    start: 471.919,
+    duration: 4.4,
+  },
+  { text: "and structure a project it has 75 000", start: 474, duration: 4.16 },
+  { text: "github stars and as the second most", start: 476.319, duration: 4 },
+  {
+    text: "downloaded framework on npm it comes",
+    start: 478.16,
+    duration: 3.84,
+  },
+  {
+    text: "with officially supported libraries for",
+    start: 480.319,
+    duration: 3.6,
+  },
+  { text: "routing animation and server side", start: 482, duration: 3.599 },
+  {
+    text: "rendering and because it follows a set",
+    start: 483.919,
+    duration: 3.521,
+  },
+  {
+    text: "of predictable conventions all angular",
+    start: 485.599,
+    duration: 3.6,
+  },
+  {
+    text: "projects are structured relatively the",
+    start: 487.44,
+    duration: 3.439,
+  },
+  {
+    text: "same and have awesome tooling to go",
+    start: 489.199,
+    duration: 3.68,
+  },
+  {
+    text: "along with them in fact you are actually",
+    start: 490.879,
+    duration: 4.081,
+  },
+  {
+    text: "required to use typescript google uses",
+    start: 492.879,
+    duration: 3.681,
+  },
+  { text: "it internally to build hundreds of", start: 494.96, duration: 2.88 },
+  {
+    text: "different web apps throughout their",
+    start: 496.56,
+    duration: 3.12,
+  },
+  {
+    text: "product line it's a great option for big",
+    start: 497.84,
+    duration: 3.6,
+  },
+  {
+    text: "teams but may be a little overwhelming",
+    start: 499.68,
+    duration: 3.44,
+  },
+  {
+    text: "if you're a beginner to start an angular",
+    start: 501.44,
+    duration: 4.08,
+  },
+  {
+    text: "project run ng-new from the command line",
+    start: 503.12,
+    duration: 4,
+  },
+  {
+    text: "that'll give us a fairly large project",
+    start: 505.52,
+    duration: 3.359,
+  },
+  {
+    text: "to get started that's already configured",
+    start: 507.12,
+    duration: 3.68,
+  },
+  {
+    text: "with typescript we can build a component",
+    start: 508.879,
+    duration: 4.321,
+  },
+  {
+    text: "in the appcomponent.ts file or we could",
+    start: 510.8,
+    duration: 4.4,
+  },
+  { text: "use the cli to generate a brand new", start: 513.2, duration: 4.24 },
+  {
+    text: "component automatically in fact angular",
+    start: 515.2,
+    duration: 4.16,
+  },
+  {
+    text: "has the most powerful cli of all the",
+    start: 517.44,
+    duration: 3.76,
+  },
+  {
+    text: "frameworks by a pretty wide margin and",
+    start: 519.36,
+    duration: 3.599,
+  },
+  {
+    text: "you'll notice the component itself is",
+    start: 521.2,
+    duration: 3.92,
+  },
+  {
+    text: "represented as a typescript class that",
+    start: 522.959,
+    duration: 4.56,
+  },
+  {
+    text: "has a component decorator on top of it",
+    start: 525.12,
+    duration: 4.64,
+  },
+  {
+    text: "now it is possible to define an entire",
+    start: 527.519,
+    duration: 4.561,
+  },
+  {
+    text: "component in this ts file however most",
+    start: 529.76,
+    duration: 4.32,
+  },
+  {
+    text: "angular apps break components down into",
+    start: 532.08,
+    duration: 3.84,
+  },
+  {
+    text: "at least three separate files one for",
+    start: 534.08,
+    duration: 4.16,
+  },
+  {
+    text: "your typescript one for the html and",
+    start: 535.92,
+    duration: 4.16,
+  },
+  { text: "another for the css", start: 538.24, duration: 4 },
+  {
+    text: "to add reactive state to the component",
+    start: 540.08,
+    duration: 5.04,
+  },
+  {
+    text: "simply define a property on the class",
+    start: 542.24,
+    duration: 4.719,
+  },
+  {
+    text: "from there we can define a method on the",
+    start: 545.12,
+    duration: 4.24,
+  },
+  {
+    text: "class to update the state in addition we",
+    start: 546.959,
+    duration: 3.761,
+  },
+  { text: "can manage the lifecycle of the", start: 549.36, duration: 3.44 },
+  {
+    text: "component in the class by implementing",
+    start: 550.72,
+    duration: 4.4,
+  },
+  {
+    text: "special methods like ng on init this",
+    start: 552.8,
+    duration: 3.76,
+  },
+  { text: "method will be called whenever that", start: 555.12, duration: 3.6 },
+  {
+    text: "component is first initialized now if we",
+    start: 556.56,
+    duration: 3.92,
+  },
+  {
+    text: "go into the template you'll notice this",
+    start: 558.72,
+    duration: 4.16,
+  },
+  {
+    text: "looks like html but it's been extended",
+    start: 560.48,
+    duration: 4.24,
+  },
+  {
+    text: "or empowered with a special templating",
+    start: 562.88,
+    duration: 4.079,
+  },
+  {
+    text: "language that makes it possible to loop",
+    start: 564.72,
+    duration: 4.64,
+  },
+  {
+    text: "over an array of items using the ng4",
+    start: 566.959,
+    duration: 4.961,
+  },
+  {
+    text: "directory unlike react which brings html",
+    start: 569.36,
+    duration: 4.4,
+  },
+  { text: "into your javascript angular does the", start: 571.92, duration: 4 },
+  {
+    text: "opposite and brings javascript into your",
+    start: 573.76,
+    duration: 5.12,
+  },
+  {
+    text: "html then in the form itself we can bind",
+    start: 575.92,
+    duration: 4.88,
+  },
+  {
+    text: "to the submit event and run the add to",
+    start: 578.88,
+    duration: 3.92,
+  },
+  {
+    text: "do method whenever that event is fired",
+    start: 580.8,
+    duration: 3.76,
+  },
+  {
+    text: "then to get the actual value from the",
+    start: 582.8,
+    duration: 3.92,
+  },
+  { text: "form input we can use two-way data", start: 584.56, duration: 4.64 },
+  {
+    text: "binding using the ng model directive",
+    start: 586.72,
+    duration: 4.72,
+  },
+  {
+    text: "this binds the form value to the to do",
+    start: 589.2,
+    duration: 4.56,
+  },
+  {
+    text: "text property on the class however to",
+    start: 591.44,
+    duration: 4.16,
+  },
+  { text: "use this we need to go into the app", start: 593.76, duration: 4 },
+  { text: "module and import the angular forms", start: 595.6, duration: 4 },
+  {
+    text: "module there because it's required for",
+    start: 597.76,
+    duration: 3.68,
+  },
+  { text: "that directive to work and for that", start: 599.6, duration: 3.84 },
+  {
+    text: "reason among many others it tends to",
+    start: 601.44,
+    duration: 3.68,
+  },
+  {
+    text: "have a much higher learning curve than",
+    start: 603.44,
+    duration: 3.6,
+  },
+  {
+    text: "other frameworks but everything is here",
+    start: 605.12,
+    duration: 3.52,
+  },
+  { text: "for a reason and angular is very", start: 607.04, duration: 3.52 },
+  {
+    text: "opinionated about how to structure a",
+    start: 608.64,
+    duration: 3.6,
+  },
+  {
+    text: "project that will scale well and that",
+    start: 610.56,
+    duration: 3.36,
+  },
+  { text: "tends to make it very popular with", start: 612.24, duration: 3.52 },
+  {
+    text: "enterprise applications and that brings",
+    start: 613.92,
+    duration: 3.919,
+  },
+  {
+    text: "me to vue.js which is independently",
+    start: 615.76,
+    duration: 4.16,
+  },
+  {
+    text: "developed and maintained by evan yu and",
+    start: 617.839,
+    duration: 4.321,
+  },
+  {
+    text: "feels very similar to angular but in a",
+    start: 619.92,
+    duration: 3.919,
+  },
+  {
+    text: "package that's more approachable for",
+    start: 622.16,
+    duration: 3.52,
+  },
+  {
+    text: "independent developers it has official",
+    start: 623.839,
+    duration: 3.761,
+  },
+  {
+    text: "packages for things like routing and",
+    start: 625.68,
+    duration: 4.159,
+  },
+  {
+    text: "state management and a huge ecosystem of",
+    start: 627.6,
+    duration: 3.919,
+  },
+  {
+    text: "third-party packages it has the most",
+    start: 629.839,
+    duration: 3.44,
+  },
+  {
+    text: "github stars at a hundred and eighty",
+    start: 631.519,
+    duration: 3.601,
+  },
+  {
+    text: "seven thousand and is basically tied",
+    start: 633.279,
+    duration: 4.161,
+  },
+  {
+    text: "with angular for second place on npm",
+    start: 635.12,
+    duration: 4.64,
+  },
+  {
+    text: "downloads vue also has a very powerful",
+    start: 637.44,
+    duration: 5.04,
+  },
+  {
+    text: "cli for example we can hit the view ui",
+    start: 639.76,
+    duration: 4.48,
+  },
+  { text: "command which will bring up an actual", start: 642.48, duration: 4 },
+  {
+    text: "browser window and walk us through all",
+    start: 644.24,
+    duration: 4.48,
+  },
+  {
+    text: "the different dependencies and features",
+    start: 646.48,
+    duration: 3.919,
+  },
+  {
+    text: "that we can add when generating the",
+    start: 648.72,
+    duration: 3.359,
+  },
+  {
+    text: "initial app this creates a really nice",
+    start: 650.399,
+    duration: 3.201,
+  },
+  {
+    text: "developer experience but it doesn't",
+    start: 652.079,
+    duration: 3.2,
+  },
+  { text: "generate components and is just not", start: 653.6, duration: 3.84 },
+  {
+    text: "quite as powerful as the angular cli",
+    start: 655.279,
+    duration: 3.921,
+  },
+  {
+    text: "you'll notice it generates a far more",
+    start: 657.44,
+    duration: 3.76,
+  },
+  {
+    text: "simplified project structure but in the",
+    start: 659.2,
+    duration: 3.92,
+  },
+  { text: "main.js file we can add additional", start: 661.2, duration: 3.92 },
+  {
+    text: "plugins for other functionality like",
+    start: 663.12,
+    duration: 3.76,
+  },
+  { text: "routing or state management as it", start: 665.12, duration: 3.92 },
+  {
+    text: "becomes needed components are defined in",
+    start: 666.88,
+    duration: 4.56,
+  },
+  {
+    text: "files that end in dot view the code is",
+    start: 669.04,
+    duration: 5.28,
+  },
+  {
+    text: "organized into three parts a template a",
+    start: 671.44,
+    duration: 5.36,
+  },
+  {
+    text: "script and the styles the component",
+    start: 674.32,
+    duration: 4.24,
+  },
+  { text: "itself is represented as a plain", start: 676.8, duration: 3.76 },
+  {
+    text: "javascript object and we can define",
+    start: 678.56,
+    duration: 4.399,
+  },
+  {
+    text: "reactive data or state on it using that",
+    start: 680.56,
+    duration: 4.959,
+  },
+  {
+    text: "data property now to change the state we",
+    start: 682.959,
+    duration: 4.161,
+  },
+  {
+    text: "have the methods property where we can",
+    start: 685.519,
+    duration: 3.841,
+  },
+  {
+    text: "define our add to do method that can be",
+    start: 687.12,
+    duration: 4,
+  },
+  {
+    text: "called when certain events are triggered",
+    start: 689.36,
+    duration: 3.36,
+  },
+  { text: "then to tap into the component life", start: 691.12, duration: 3.6 },
+  {
+    text: "cycle we have methods like mounted that",
+    start: 692.72,
+    duration: 3.6,
+  },
+  {
+    text: "will be called when the component is",
+    start: 694.72,
+    duration: 3.84,
+  },
+  {
+    text: "first initialized very similar concepts",
+    start: 696.32,
+    duration: 4.079,
+  },
+  {
+    text: "to react in angular the main difference",
+    start: 698.56,
+    duration: 3.04,
+  },
+  {
+    text: "being that we're working within the",
+    start: 700.399,
+    duration: 3.44,
+  },
+  {
+    text: "context of a plain javascript object",
+    start: 701.6,
+    duration: 4.239,
+  },
+  {
+    text: "instead of a function or class in the",
+    start: 703.839,
+    duration: 3.761,
+  },
+  { text: "template we have a setup that's very", start: 705.839, duration: 4 },
+  {
+    text: "similar to angular that uses directives",
+    start: 707.6,
+    duration: 5.12,
+  },
+  {
+    text: "to handle things like v4 to loop over",
+    start: 709.839,
+    duration: 6.24,
+  },
+  {
+    text: "the to do items or v on submit to handle",
+    start: 712.72,
+    duration: 4.88,
+  },
+  {
+    text: "the form submission one thing that's",
+    start: 716.079,
+    duration: 3.281,
+  },
+  {
+    text: "nice here is that you can automatically",
+    start: 717.6,
+    duration: 3.6,
+  },
+  { text: "prevent the default behavior by just", start: 719.36, duration: 4 },
+  {
+    text: "adding dot prevent to this directive",
+    start: 721.2,
+    duration: 3.759,
+  },
+  {
+    text: "instead of implementing that code in the",
+    start: 723.36,
+    duration: 3.12,
+  },
+  {
+    text: "method itself you'll find a lot of",
+    start: 724.959,
+    duration: 3.041,
+  },
+  {
+    text: "little things like that in view that",
+    start: 726.48,
+    duration: 3.68,
+  },
+  {
+    text: "make your life easier and lastly we have",
+    start: 728,
+    duration: 4.48,
+  },
+  {
+    text: "the v model directive to bind the to-do",
+    start: 730.16,
+    duration: 4.72,
+  },
+  {
+    text: "text to the form input value view is",
+    start: 732.48,
+    duration: 4.32,
+  },
+  { text: "awesome and has a big community but", start: 734.88, duration: 4 },
+  {
+    text: "another independent option is spelt it",
+    start: 736.8,
+    duration: 4.159,
+  },
+  {
+    text: "was the most loved framework on the 2021",
+    start: 738.88,
+    duration: 4.32,
+  },
+  {
+    text: "stack overflow survey and has about 50",
+    start: 740.959,
+    duration: 4.32,
+  },
+  {
+    text: "000 github stars it's not as common as",
+    start: 743.2,
+    duration: 3.759,
+  },
+  {
+    text: "the other three in the wild but is very",
+    start: 745.279,
+    duration: 3.521,
+  },
+  {
+    text: "well loved by the people who do use it",
+    start: 746.959,
+    duration: 3.921,
+  },
+  {
+    text: "like react it's designed as a minimal",
+    start: 748.8,
+    duration: 3.839,
+  },
+  {
+    text: "library and relies on the open source",
+    start: 750.88,
+    duration: 3.44,
+  },
+  {
+    text: "community for other features like",
+    start: 752.639,
+    duration: 3.121,
+  },
+  {
+    text: "routing one thing that makes it unique",
+    start: 754.32,
+    duration: 2.88,
+  },
+  {
+    text: "from the other frameworks is that it",
+    start: 755.76,
+    duration: 3.68,
+  },
+  {
+    text: "doesn't ship a runtime like virtual dom",
+    start: 757.2,
+    duration: 4.24,
+  },
+  {
+    text: "to the browser instead it works as a",
+    start: 759.44,
+    duration: 4.32,
+  },
+  {
+    text: "compiler to turn your code into plain",
+    start: 761.44,
+    duration: 3.839,
+  },
+  { text: "javascript when you generate a new", start: 763.76, duration: 3.6 },
+  {
+    text: "project you'll have a rollup or webpack",
+    start: 765.279,
+    duration: 3.921,
+  },
+  {
+    text: "config if you choose which is used to",
+    start: 767.36,
+    duration: 4.159,
+  },
+  {
+    text: "bundle your code and all the other cli",
+    start: 769.2,
+    duration: 4.4,
+  },
+  {
+    text: "tools attempt to abstract that part away",
+    start: 771.519,
+    duration: 3.841,
+  },
+  {
+    text: "from you when building a smelt project",
+    start: 773.6,
+    duration: 3.12,
+  },
+  {
+    text: "you may need to learn a little bit about",
+    start: 775.36,
+    duration: 3.039,
+  },
+  { text: "module bundlers whereas the other", start: 776.72, duration: 3.52 },
+  {
+    text: "frameworks try to hide that detail from",
+    start: 778.399,
+    duration: 4.161,
+  },
+  {
+    text: "you components are defined in dot spell",
+    start: 780.24,
+    duration: 4.48,
+  },
+  {
+    text: "files and just like view they have three",
+    start: 782.56,
+    duration: 4.56,
+  },
+  {
+    text: "parts the script the template and the",
+    start: 784.72,
+    duration: 4.48,
+  },
+  {
+    text: "styles to create reactive state on the",
+    start: 787.12,
+    duration: 4.24,
+  },
+  {
+    text: "component just declare a variable with",
+    start: 789.2,
+    duration: 4.24,
+  },
+  {
+    text: "the let keyword then to modify the state",
+    start: 791.36,
+    duration: 4.24,
+  },
+  {
+    text: "define a plain javascript function what",
+    start: 793.44,
+    duration: 3.92,
+  },
+  {
+    text: "i like about this is that it feels very",
+    start: 795.6,
+    duration: 3.76,
+  },
+  {
+    text: "natural it looks like regular javascript",
+    start: 797.36,
+    duration: 3.76,
+  },
+  { text: "with minimal abstractions going on", start: 799.36, duration: 3.84 },
+  {
+    text: "compared to something like react now to",
+    start: 801.12,
+    duration: 4.159,
+  },
+  {
+    text: "deal with lifecycle hooks we can import",
+    start: 803.2,
+    duration: 3.84,
+  },
+  {
+    text: "the on mount function from svelt and",
+    start: 805.279,
+    duration: 3.201,
+  },
+  { text: "register a callback for when the", start: 807.04, duration: 3.52 },
+  {
+    text: "component is first initialized now down",
+    start: 808.48,
+    duration: 4.159,
+  },
+  {
+    text: "in the template we have a special syntax",
+    start: 810.56,
+    duration: 4.16,
+  },
+  {
+    text: "that makes it easy to loop over things",
+    start: 812.639,
+    duration: 4.401,
+  },
+  {
+    text: "like each to loop over each to do in the",
+    start: 814.72,
+    duration: 4.479,
+  },
+  {
+    text: "array then to handle the form submission",
+    start: 817.04,
+    duration: 4.64,
+  },
+  {
+    text: "we have on submit and we can also add a",
+    start: 819.199,
+    duration: 4.721,
+  },
+  { text: "bar with preventdefault to avoid", start: 821.68, duration: 4.24 },
+  {
+    text: "implementing that detail in the function",
+    start: 823.92,
+    duration: 3.919,
+  },
+  {
+    text: "and lastly we'll implement two-way data",
+    start: 825.92,
+    duration: 4.32,
+  },
+  {
+    text: "binding using the bind directive with",
+    start: 827.839,
+    duration: 4.24,
+  },
+  { text: "value followed by the to do text", start: 830.24, duration: 3.599 },
+  {
+    text: "variable in my opinion this is the",
+    start: 832.079,
+    duration: 3.12,
+  },
+  {
+    text: "cleanest implementation that we've",
+    start: 833.839,
+    duration: 3.12,
+  },
+  {
+    text: "looked at it has the fewest lines of",
+    start: 835.199,
+    duration: 3.521,
+  },
+  {
+    text: "code and is fairly easy to read if",
+    start: 836.959,
+    duration: 3.44,
+  },
+  {
+    text: "you're a javascript developer that has",
+    start: 838.72,
+    duration: 3.359,
+  },
+  {
+    text: "never used spelt before the drawback",
+    start: 840.399,
+    duration: 3.361,
+  },
+  {
+    text: "though is that the community is much",
+    start: 842.079,
+    duration: 3.681,
+  },
+  {
+    text: "smaller than something like react so if",
+    start: 843.76,
+    duration: 3.759,
+  },
+  {
+    text: "you need to use a supporting library or",
+    start: 845.76,
+    duration: 3.28,
+  },
+  {
+    text: "if you're looking to get a job you might",
+    start: 847.519,
+    duration: 3.12,
+  },
+  {
+    text: "run into some more roadblocks than if",
+    start: 849.04,
+    duration: 3.52,
+  },
+  {
+    text: "you used a more popular framework and",
+    start: 850.639,
+    duration: 3.2,
+  },
+  { text: "the same goes for all the other", start: 852.56, duration: 2.8 },
+  {
+    text: "frameworks that we'll look at from here",
+    start: 853.839,
+    duration: 3.601,
+  },
+  { text: "starting with lit lit is a google", start: 855.36, duration: 3.839 },
+  {
+    text: "sponsored project that's focused on",
+    start: 857.44,
+    duration: 3.44,
+  },
+  {
+    text: "building web components if you're not",
+    start: 859.199,
+    duration: 3.921,
+  },
+  { text: "familiar web components are a browser", start: 860.88, duration: 4 },
+  { text: "standard that allows you to create", start: 863.12, duration: 3.68 },
+  {
+    text: "custom elements that can work across",
+    start: 864.88,
+    duration: 3.84,
+  },
+  {
+    text: "multiple frameworks sounds great but the",
+    start: 866.8,
+    duration: 4,
+  },
+  { text: "web components api is notoriously", start: 868.72, duration: 3.52 },
+  {
+    text: "difficult to work with the cool thing",
+    start: 870.8,
+    duration: 3.039,
+  },
+  {
+    text: "about lit is that when you define a",
+    start: 872.24,
+    duration: 3.68,
+  },
+  {
+    text: "component it's creating a standard",
+    start: 873.839,
+    duration: 4.081,
+  },
+  {
+    text: "custom element under the hood now other",
+    start: 875.92,
+    duration: 3.76,
+  },
+  {
+    text: "frameworks can do that as well but for",
+    start: 877.92,
+    duration: 3.359,
+  },
+  {
+    text: "most of them it's just an afterthought",
+    start: 879.68,
+    duration: 3.279,
+  },
+  {
+    text: "and the developer experience is usually",
+    start: 881.279,
+    duration: 3.601,
+  },
+  {
+    text: "not ideal if your goal is to build",
+    start: 882.959,
+    duration: 3.841,
+  },
+  {
+    text: "standard web components lit doesn't have",
+    start: 884.88,
+    duration: 3.92,
+  },
+  {
+    text: "a cli of its own but there is a starter",
+    start: 886.8,
+    duration: 3.68,
+  },
+  {
+    text: "project to get us going i'm using the",
+    start: 888.8,
+    duration: 3.599,
+  },
+  {
+    text: "typescript version here but that part is",
+    start: 890.48,
+    duration: 4.24,
+  },
+  { text: "optional inside the lit app ts file", start: 892.399, duration: 4 },
+  {
+    text: "you'll notice that it's calling window",
+    start: 894.72,
+    duration: 3.76,
+  },
+  {
+    text: "custom elements which is part of the web",
+    start: 896.399,
+    duration: 3.841,
+  },
+  {
+    text: "components api in the browser that's",
+    start: 898.48,
+    duration: 3.2,
+  },
+  {
+    text: "just a unique point that you won't see",
+    start: 900.24,
+    duration: 2.959,
+  },
+  { text: "in other frameworks by default", start: 901.68, duration: 3.44 },
+  {
+    text: "components themselves are defined as a",
+    start: 903.199,
+    duration: 4.32,
+  },
+  {
+    text: "class that extends lit element reactive",
+    start: 905.12,
+    duration: 4.56,
+  },
+  {
+    text: "data can be defined as properties on the",
+    start: 907.519,
+    duration: 4.641,
+  },
+  {
+    text: "class using the property decorator then",
+    start: 909.68,
+    duration: 4.399,
+  },
+  {
+    text: "methods can be defined on the class to",
+    start: 912.16,
+    duration: 3.919,
+  },
+  {
+    text: "update the state lifecycle hooks are",
+    start: 914.079,
+    duration: 3.841,
+  },
+  {
+    text: "based on the ones defined in the actual",
+    start: 916.079,
+    duration: 3.921,
+  },
+  { text: "web components api like connected", start: 917.92, duration: 3.76 },
+  { text: "callback by implementing the", start: 920, duration: 3.92 },
+  {
+    text: "connectedcallback method we can run code",
+    start: 921.68,
+    duration: 4.32,
+  },
+  {
+    text: "when the component is first initialized",
+    start: 923.92,
+    duration: 3.52,
+  },
+  {
+    text: "now one thing that's really interesting",
+    start: 926,
+    duration: 3.279,
+  },
+  {
+    text: "about lit is the way that it handles",
+    start: 927.44,
+    duration: 4.16,
+  },
+  {
+    text: "templates it uses the existing template",
+    start: 929.279,
+    duration: 4.321,
+  },
+  { text: "literals that we have in javascript or", start: 931.6, duration: 4 },
+  {
+    text: "in other words a string that starts with",
+    start: 933.6,
+    duration: 4.159,
+  },
+  {
+    text: "backticks this allows you to interpolate",
+    start: 935.6,
+    duration: 4.64,
+  },
+  {
+    text: "javascript into an html string using",
+    start: 937.759,
+    duration: 4.801,
+  },
+  {
+    text: "dollar sign braces the end result is",
+    start: 940.24,
+    duration: 4.08,
+  },
+  {
+    text: "something that feels kind of similar to",
+    start: 942.56,
+    duration: 4.88,
+  },
+  {
+    text: "jsx and react but the html can also have",
+    start: 944.32,
+    duration: 6.319,
+  },
+  {
+    text: "directives like submit or dot value to",
+    start: 947.44,
+    duration: 5.199,
+  },
+  {
+    text: "bind to the form submit event or the",
+    start: 950.639,
+    duration: 4.32,
+  },
+  {
+    text: "input value and as far as i can tell it",
+    start: 952.639,
+    duration: 4.32,
+  },
+  {
+    text: "doesn't support two-way data binding so",
+    start: 954.959,
+    duration: 4.081,
+  },
+  {
+    text: "i had to set up an event listener here",
+    start: 956.959,
+    duration: 4.24,
+  },
+  {
+    text: "on the input change event to update the",
+    start: 959.04,
+    duration: 4.32,
+  },
+  {
+    text: "to-do text whenever that event fires the",
+    start: 961.199,
+    duration: 3.681,
+  },
+  {
+    text: "bottom line with lit is that you get a",
+    start: 963.36,
+    duration: 3.2,
+  },
+  {
+    text: "much nicer way to build standard web",
+    start: 964.88,
+    duration: 3.12,
+  },
+  { text: "components without having to be an", start: 966.56, duration: 3.6 },
+  {
+    text: "expert on the underlying apis and that",
+    start: 968,
+    duration: 3.839,
+  },
+  {
+    text: "brings me to an alternative framework",
+    start: 970.16,
+    duration: 3.52,
+  },
+  {
+    text: "that is also focused on web components",
+    start: 971.839,
+    duration: 3.761,
+  },
+  {
+    text: "called stencil this one comes from the",
+    start: 973.68,
+    duration: 3.76,
+  },
+  {
+    text: "team behind the ionic framework which",
+    start: 975.6,
+    duration: 3.679,
+  },
+  {
+    text: "itself is actually a component library",
+    start: 977.44,
+    duration: 3.759,
+  },
+  {
+    text: "for mobile development that's built with",
+    start: 979.279,
+    duration: 4,
+  },
+  {
+    text: "stencil they use web components for the",
+    start: 981.199,
+    duration: 4.241,
+  },
+  {
+    text: "purpose of making ionic compatible with",
+    start: 983.279,
+    duration: 4.321,
+  },
+  {
+    text: "react angular and vue out of the box",
+    start: 985.44,
+    duration: 4.079,
+  },
+  {
+    text: "create a new app by running npm init",
+    start: 987.6,
+    duration: 3.359,
+  },
+  { text: "stencil and that will give you a", start: 989.519, duration: 3.361 },
+  {
+    text: "typescript project to get started just",
+    start: 990.959,
+    duration: 3.921,
+  },
+  {
+    text: "like lit it will take each component and",
+    start: 992.88,
+    duration: 3.759,
+  },
+  { text: "compile it down to a standard web", start: 994.88, duration: 4.16 },
+  {
+    text: "component a component itself is a class",
+    start: 996.639,
+    duration: 4.241,
+  },
+  {
+    text: "with the component decorator which looks",
+    start: 999.04,
+    duration: 3.84,
+  },
+  {
+    text: "very similar to angular then reactive",
+    start: 1000.88,
+    duration: 4.079,
+  },
+  {
+    text: "data can be defined as properties with",
+    start: 1002.88,
+    duration: 4.079,
+  },
+  {
+    text: "the state decorator custom methods can",
+    start: 1004.959,
+    duration: 4,
+  },
+  {
+    text: "be defined to update the state then we",
+    start: 1006.959,
+    duration: 3.841,
+  },
+  {
+    text: "have life cycle hooks like component",
+    start: 1008.959,
+    duration: 4,
+  },
+  {
+    text: "will load to run code when the component",
+    start: 1010.8,
+    duration: 4.32,
+  },
+  {
+    text: "is first initialized at this point this",
+    start: 1012.959,
+    duration: 3.921,
+  },
+  {
+    text: "component looks almost exactly like an",
+    start: 1015.12,
+    duration: 4.079,
+  },
+  {
+    text: "angular component but for templating it",
+    start: 1016.88,
+    duration: 4.8,
+  },
+  {
+    text: "uses jsx like react that gives you the",
+    start: 1019.199,
+    duration: 4.241,
+  },
+  {
+    text: "best or worst of both worlds depending",
+    start: 1021.68,
+    duration: 3.759,
+  },
+  {
+    text: "on who you ask the template looks almost",
+    start: 1023.44,
+    duration: 3.759,
+  },
+  {
+    text: "exactly like the react app but it",
+    start: 1025.439,
+    duration: 3.52,
+  },
+  {
+    text: "doesn't appear to support two-way data",
+    start: 1027.199,
+    duration: 3.521,
+  },
+  {
+    text: "binding which means i've also added an",
+    start: 1028.959,
+    duration: 4,
+  },
+  {
+    text: "extra event listener for on input to",
+    start: 1030.72,
+    duration: 3.839,
+  },
+  {
+    text: "update the to-do text when the user",
+    start: 1032.959,
+    duration: 3.681,
+  },
+  {
+    text: "types into the form stencil is another",
+    start: 1034.559,
+    duration: 3.921,
+  },
+  {
+    text: "great option for building web components",
+    start: 1036.64,
+    duration: 3.12,
+  },
+  {
+    text: "but now we're going to move on to a",
+    start: 1038.48,
+    duration: 2.8,
+  },
+  {
+    text: "framework that i get a ton of requests",
+    start: 1039.76,
+    duration: 4.4,
+  },
+  {
+    text: "for solid js it's a tool for building ui",
+    start: 1041.28,
+    duration: 4.72,
+  },
+  {
+    text: "components and feels very inspired by",
+    start: 1044.16,
+    duration: 3.84,
+  },
+  {
+    text: "react but the main difference is that it",
+    start: 1046,
+    duration: 4,
+  },
+  {
+    text: "doesn't use the virtual dom instead it",
+    start: 1048,
+    duration: 3.919,
+  },
+  {
+    text: "compiles your code down to native dom",
+    start: 1050,
+    duration: 3.919,
+  },
+  {
+    text: "nodes similar to spelt and because of",
+    start: 1051.919,
+    duration: 4,
+  },
+  {
+    text: "this it hits very high performance marks",
+    start: 1053.919,
+    duration: 3.841,
+  },
+  {
+    text: "across every benchmark you can think of",
+    start: 1055.919,
+    duration: 3.921,
+  },
+  {
+    text: "it like a faster more developer friendly",
+    start: 1057.76,
+    duration: 3.919,
+  },
+  {
+    text: "version of react but the drawback is",
+    start: 1059.84,
+    duration: 3.76,
+  },
+  {
+    text: "that it has a smaller community to draw",
+    start: 1061.679,
+    duration: 3.841,
+  },
+  {
+    text: "from when you generate a new project it",
+    start: 1063.6,
+    duration: 3.84,
+  },
+  {
+    text: "uses veet as the build tool which is",
+    start: 1065.52,
+    duration: 4.08,
+  },
+  {
+    text: "cool then you have components defined in",
+    start: 1067.44,
+    duration: 4.72,
+  },
+  {
+    text: "jsx files just like react components are",
+    start: 1069.6,
+    duration: 4.64,
+  },
+  {
+    text: "defined as functions then to define",
+    start: 1072.16,
+    duration: 4.24,
+  },
+  {
+    text: "reactive state on the component we use",
+    start: 1074.24,
+    duration: 4.16,
+  },
+  {
+    text: "something very similar to a react hook",
+    start: 1076.4,
+    duration: 3.92,
+  },
+  {
+    text: "called a signal it returns us with a",
+    start: 1078.4,
+    duration: 4.32,
+  },
+  {
+    text: "reactive value and a function to update",
+    start: 1080.32,
+    duration: 4.56,
+  },
+  {
+    text: "that value we can then define a function",
+    start: 1082.72,
+    duration: 4.16,
+  },
+  {
+    text: "to update the state and if we want to",
+    start: 1084.88,
+    duration: 4.08,
+  },
+  {
+    text: "use a life cycle hook instead of use",
+    start: 1086.88,
+    duration: 4.24,
+  },
+  {
+    text: "effect we have the much more readable on",
+    start: 1088.96,
+    duration: 3.76,
+  },
+  {
+    text: "mount hook that will run when the",
+    start: 1091.12,
+    duration: 3.679,
+  },
+  {
+    text: "component is first initialized now for",
+    start: 1092.72,
+    duration: 4.56,
+  },
+  {
+    text: "the ui itself we use jsx it looks pretty",
+    start: 1094.799,
+    duration: 4.561,
+  },
+  {
+    text: "much identical to the react code but",
+    start: 1097.28,
+    duration: 3.68,
+  },
+  {
+    text: "i've noticed that solid does things to",
+    start: 1099.36,
+    duration: 3.76,
+  },
+  {
+    text: "make your life easier for example we can",
+    start: 1100.96,
+    duration: 4.32,
+  },
+  {
+    text: "bind the form value to a variable using",
+    start: 1103.12,
+    duration: 4.4,
+  },
+  {
+    text: "ref and unlike react we don't need to",
+    start: 1105.28,
+    duration: 4,
+  },
+  {
+    text: "import the used ref hook to do that",
+    start: 1107.52,
+    duration: 4.159,
+  },
+  {
+    text: "overall solid js feels like a more well",
+    start: 1109.28,
+    duration: 4.56,
+  },
+  {
+    text: "thought out and faster version of react",
+    start: 1111.679,
+    duration: 3.761,
+  },
+  {
+    text: "but now let's look at something totally",
+    start: 1113.84,
+    duration: 4.56,
+  },
+  {
+    text: "different alpine js it's a tiny library",
+    start: 1115.44,
+    duration: 4.88,
+  },
+  {
+    text: "at around four kilobytes that allows you",
+    start: 1118.4,
+    duration: 4.24,
+  },
+  { text: "to extend your existing html with", start: 1120.32, duration: 4.32 },
+  {
+    text: "reactive data and many of the features",
+    start: 1122.64,
+    duration: 3.2,
+  },
+  {
+    text: "that you would find in the frameworks",
+    start: 1124.64,
+    duration: 2.56,
+  },
+  {
+    text: "we've already looked at instead of",
+    start: 1125.84,
+    duration: 3.28,
+  },
+  {
+    text: "primarily focusing on javascript with",
+    start: 1127.2,
+    duration: 4.719,
+  },
+  {
+    text: "alpine you generally focus on your html",
+    start: 1129.12,
+    duration: 5.04,
+  },
+  {
+    text: "if you've ever used tailwind for css you",
+    start: 1131.919,
+    duration: 4.481,
+  },
+  {
+    text: "can think of alpine as the equivalent in",
+    start: 1134.16,
+    duration: 4.72,
+  },
+  {
+    text: "javascript it has over 17 000 github",
+    start: 1136.4,
+    duration: 4.639,
+  },
+  {
+    text: "stars and is a popular replacement for",
+    start: 1138.88,
+    duration: 4.64,
+  },
+  {
+    text: "jquery to get started create an html",
+    start: 1141.039,
+    duration: 4.561,
+  },
+  {
+    text: "file then add the alpine script to the",
+    start: 1143.52,
+    duration: 3.92,
+  },
+  { text: "head reactive data can be stored", start: 1145.6, duration: 4.319 },
+  {
+    text: "directly in a dom node using the x data",
+    start: 1147.44,
+    duration: 4.239,
+  },
+  {
+    text: "attribute that data can then be used in",
+    start: 1149.919,
+    duration: 4.321,
+  },
+  {
+    text: "a child element with something like x4",
+    start: 1151.679,
+    duration: 4.961,
+  },
+  {
+    text: "to loop over the array of to do's then",
+    start: 1154.24,
+    duration: 4.96,
+  },
+  {
+    text: "down in the form we can use x on submit",
+    start: 1156.64,
+    duration: 4.96,
+  },
+  {
+    text: "and also prevent default and then bind",
+    start: 1159.2,
+    duration: 4.479,
+  },
+  {
+    text: "it to a function in our javascript the",
+    start: 1161.6,
+    duration: 3.84,
+  },
+  {
+    text: "concepts here are very similar to the",
+    start: 1163.679,
+    duration: 3.281,
+  },
+  {
+    text: "other frameworks that we've looked at",
+    start: 1165.44,
+    duration: 3.359,
+  },
+  {
+    text: "but in this case we're working with raw",
+    start: 1166.96,
+    duration: 3.839,
+  },
+  { text: "html as opposed to some custom", start: 1168.799, duration: 4.401 },
+  {
+    text: "templating language or jsx now if we do",
+    start: 1170.799,
+    duration: 4.081,
+  },
+  {
+    text: "want to write some plain javascript we",
+    start: 1173.2,
+    duration: 3.92,
+  },
+  {
+    text: "can do that in a script tag and alpine",
+    start: 1174.88,
+    duration: 4.32,
+  },
+  {
+    text: "actually has a mechanism called alpine",
+    start: 1177.12,
+    duration: 4.559,
+  },
+  {
+    text: "store that allows us to store data and",
+    start: 1179.2,
+    duration: 4.24,
+  },
+  {
+    text: "share it between multiple components in",
+    start: 1181.679,
+    duration: 3.521,
+  },
+  {
+    text: "the ui that's what we'll need to do for",
+    start: 1183.44,
+    duration: 3.44,
+  },
+  {
+    text: "our to-do's so that we can load them",
+    start: 1185.2,
+    duration: 3.76,
+  },
+  {
+    text: "from local storage to handle that when",
+    start: 1186.88,
+    duration: 3.76,
+  },
+  {
+    text: "the component is first initialized we",
+    start: 1188.96,
+    duration: 4.079,
+  },
+  {
+    text: "can call document add event listener to",
+    start: 1190.64,
+    duration: 4.8,
+  },
+  {
+    text: "the custom alpine init event and then",
+    start: 1193.039,
+    duration: 3.921,
+  },
+  {
+    text: "update the data from the store when that",
+    start: 1195.44,
+    duration: 3.599,
+  },
+  {
+    text: "event fires and that gives us a complete",
+    start: 1196.96,
+    duration: 4.48,
+  },
+  {
+    text: "app with very minimal code in my opinion",
+    start: 1199.039,
+    duration: 4.241,
+  },
+  {
+    text: "alpine feels like an awesome option when",
+    start: 1201.44,
+    duration: 3.359,
+  },
+  {
+    text: "you just want to add a little bit of",
+    start: 1203.28,
+    duration: 3.68,
+  },
+  {
+    text: "javascript interactivity to an existing",
+    start: 1204.799,
+    duration: 4.641,
+  },
+  {
+    text: "html page but at the same time i don't",
+    start: 1206.96,
+    duration: 4.16,
+  },
+  {
+    text: "think alpine could replace something",
+    start: 1209.44,
+    duration: 3.599,
+  },
+  {
+    text: "like react view or angular so if you're",
+    start: 1211.12,
+    duration: 3.679,
+  },
+  {
+    text: "building a very complicated single page",
+    start: 1213.039,
+    duration: 3.681,
+  },
+  {
+    text: "application it might be best to stick",
+    start: 1214.799,
+    duration: 3.601,
+  },
+  {
+    text: "with one of those and that brings us to",
+    start: 1216.72,
+    duration: 3.36,
+  },
+  { text: "the final wild wildcard framework", start: 1218.4, duration: 3.92 },
+  {
+    text: "mithril it's also very lightweight and",
+    start: 1220.08,
+    duration: 3.76,
+  },
+  {
+    text: "tends to perform better than the big",
+    start: 1222.32,
+    duration: 3.44,
+  },
+  {
+    text: "frameworks it uses virtual dom like",
+    start: 1223.84,
+    duration: 4.16,
+  },
+  {
+    text: "react and view but the overall developer",
+    start: 1225.76,
+    duration: 4,
+  },
+  { text: "experience is a lot different to get", start: 1228, duration: 4.08 },
+  {
+    text: "started create an index.html file then",
+    start: 1229.76,
+    duration: 4.399,
+  },
+  {
+    text: "add the mithral script tag to it you can",
+    start: 1232.08,
+    duration: 3.28,
+  },
+  { text: "actually create components from", start: 1234.159, duration: 3.76 },
+  {
+    text: "functions classes or as we're doing here",
+    start: 1235.36,
+    duration: 4.72,
+  },
+  {
+    text: "a plain javascript object we can add",
+    start: 1237.919,
+    duration: 4.401,
+  },
+  {
+    text: "data and methods to the component as",
+    start: 1240.08,
+    duration: 4.4,
+  },
+  {
+    text: "properties on the object there are also",
+    start: 1242.32,
+    duration: 4.479,
+  },
+  {
+    text: "special properties like on init which is",
+    start: 1244.48,
+    duration: 3.84,
+  },
+  {
+    text: "the life cycle hook for when the",
+    start: 1246.799,
+    duration: 3.601,
+  },
+  {
+    text: "component is first initialized then we",
+    start: 1248.32,
+    duration: 4.239,
+  },
+  {
+    text: "have view to define the ui itself to",
+    start: 1250.4,
+    duration: 5.04,
+  },
+  {
+    text: "define a dom node we use the m function",
+    start: 1252.559,
+    duration: 4.881,
+  },
+  {
+    text: "and pass the name of that node as the",
+    start: 1255.44,
+    duration: 3.92,
+  },
+  {
+    text: "first argument then options about the",
+    start: 1257.44,
+    duration: 3.76,
+  },
+  {
+    text: "node as the second argument like the",
+    start: 1259.36,
+    duration: 3.76,
+  },
+  {
+    text: "class name for example or you can pass",
+    start: 1261.2,
+    duration: 3.76,
+  },
+  {
+    text: "children as a second argument like we're",
+    start: 1263.12,
+    duration: 4.4,
+  },
+  {
+    text: "doing here to map an array of list items",
+    start: 1264.96,
+    duration: 4.079,
+  },
+  {
+    text: "then down on the form element we're",
+    start: 1267.52,
+    duration: 3.84,
+  },
+  {
+    text: "defining a handler for the on submit",
+    start: 1269.039,
+    duration: 3.841,
+  },
+  {
+    text: "event what you have here is something",
+    start: 1271.36,
+    duration: 3.6,
+  },
+  {
+    text: "that is kind of similar to jsx but the",
+    start: 1272.88,
+    duration: 4.64,
+  },
+  {
+    text: "ui is truly defined in pure javascript",
+    start: 1274.96,
+    duration: 4.48,
+  },
+  {
+    text: "if you hate html and never want to touch",
+    start: 1277.52,
+    duration: 3.6,
+  },
+  { text: "it you might like this system but", start: 1279.44, duration: 3.52 },
+  {
+    text: "personally i found it a bit awkward and",
+    start: 1281.12,
+    duration: 3.36,
+  },
+  {
+    text: "the mithril app actually took me the",
+    start: 1282.96,
+    duration: 3.44,
+  },
+  {
+    text: "longest amount of time to build but like",
+    start: 1284.48,
+    duration: 3.6,
+  },
+  {
+    text: "i said before it really comes down to",
+    start: 1286.4,
+    duration: 3.2,
+  },
+  {
+    text: "personal preference and i could see why",
+    start: 1288.08,
+    duration: 3.2,
+  },
+  {
+    text: "someone would really like this and there",
+    start: 1289.6,
+    duration: 3.439,
+  },
+  {
+    text: "you have 10 different ways to build the",
+    start: 1291.28,
+    duration: 3.6,
+  },
+  {
+    text: "exact same javascript app there are new",
+    start: 1293.039,
+    duration: 3.601,
+  },
+  {
+    text: "frameworks popping up every couple days",
+    start: 1294.88,
+    duration: 3.279,
+  },
+  {
+    text: "so this video will likely be very",
+    start: 1296.64,
+    duration: 3.279,
+  },
+  {
+    text: "outdated by the time you finish watching",
+    start: 1298.159,
+    duration: 3.281,
+  },
+  {
+    text: "it the bottom line is that all these",
+    start: 1299.919,
+    duration: 3.201,
+  },
+  {
+    text: "frameworks can do the same basic thing",
+    start: 1301.44,
+    duration: 3.04,
+  },
+  {
+    text: "it's really just a matter of choosing",
+    start: 1303.12,
+    duration: 2.64,
+  },
+  { text: "the one that makes you and your", start: 1304.48, duration: 2.72 },
+  { text: "teammates happy if you want to see", start: 1305.76, duration: 3.2 },
+  {
+    text: "frameworks like angular react and view",
+    start: 1307.2,
+    duration: 3.839,
+  },
+  {
+    text: "in action consider becoming a pro member",
+    start: 1308.96,
+    duration: 4.4,
+  },
+  {
+    text: "at fireship io to get access to my full",
+    start: 1311.039,
+    duration: 4.321,
+  },
+  {
+    text: "courses thanks for watching and i will",
+    start: 1313.36,
+    duration: 5.799,
+  },
+  { text: "see you in the next one", start: 1315.36, duration: 3.799 },
+];
 
 export default scores;

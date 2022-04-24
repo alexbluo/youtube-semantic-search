@@ -3,7 +3,7 @@ import type {
   InferGetServerSidePropsType,
   NextPage,
 } from "next";
-import { ChildProcessWithoutNullStreams, spawn } from "child_process";
+import { ChildProcessWithoutNullStreams, spawnSync } from "child_process";
 import { useRouter } from "next/router";
 import { Configuration, OpenAIApi } from "openai";
 import ReactPlayer from "react-player";
@@ -17,7 +17,7 @@ type Transcript = Array<{
 }>;
 
 const Watch: NextPage = ({
-  scoredTranscript,
+  transcript,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const router = useRouter();
   // console.log(transcript);
@@ -27,7 +27,7 @@ const Watch: NextPage = ({
         url={`https://youtube.com/watch?v=${router.query.v}`}
         key={process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}
       />
-      {JSON.stringify(scoredTranscript)}
+      {JSON.stringify(transcript)}
     </div>
   );
 };
@@ -38,52 +38,38 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   });
   const openai = new OpenAIApi(configuration);
 
-  const pyscript = spawn("python", [
+  const pyscript = spawnSync("python", [
     "./scripts/transcript.py",
     context.query.v as string,
   ]);
 
-  const scoredTranscript = await onData(pyscript, openai);
-  // console.log(scoredTranscript);
+  const transcript: Transcript = JSON.parse(pyscript.stdout.toString());
+
+  for (let i = 0; i < transcript.length; i += 200) {
+    // 200 is the maximum number of documents allowed per query
+    const slice = transcript.slice(i, i + 200);
+    // extract the text property from slice
+    const documents = slice.map(({ text }) => text);
+
+    const {
+      // shorthand for response.data.data
+      data: { data },
+    } = await openai.createSearch("babbage", {
+      documents: documents,
+      query: "language",
+    });
+
+    // calculate z scores and assign to each corresponding transcript section
+    const zscores = zscore(data!.map(({ score }) => score!));
+    zscores.forEach((zs, i) => (transcript[i].zscore = zs));
+  }
 
   return {
     props: {
-      scoredTranscript,
+      transcript
     },
   };
 };
-
-function onData(process: ChildProcessWithoutNullStreams, openai: OpenAIApi) {
-  return new Promise<Transcript>((resolve) => {
-    process.stdout.once("data", async (data: Buffer) => {
-      const transcript: Transcript = eval(data.toString());
-      const scoredTranscript: Transcript = [];
-      console.log("FIRE")
-      for (let i = 0; i < transcript?.length; i += 200) {
-        // 200 is the maximum number of documents allowed per query
-        const slice = transcript.slice(i, i + 200);
-        // extract the text property from slice
-        const documents = slice.map(({ text }) => text);
-
-        // const {
-        //   // shorthand for response.data.data
-        //   data: { data },
-        // } = await openai.createSearch("babbage", {
-        //   documents: documents,
-        //   query: "language",
-        // });
-
-        // // calculate z scores and add to every object in the transcript slice, adding the slice to the returned transcript
-        // const zscores = zscore(data!.map(({ score }) => score!));
-        // slice.forEach((obj, i) => (obj.zscore = zscores[i]));
-        // scoredTranscript.push(...slice);
-      }
-      console.log(scoredTranscript.length)
-      // scoredTranscript.push(...sample);
-      resolve(scoredTranscript);
-    });
-  });
-}
 
 /**
  * calculate the z-score of each score by normalizing with mean and standard deviation

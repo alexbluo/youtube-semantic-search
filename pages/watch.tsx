@@ -3,10 +3,11 @@ import type {
   InferGetServerSidePropsType,
   NextPage,
 } from "next";
-import { ChildProcessWithoutNullStreams, spawnSync } from "child_process";
+import { spawnSync } from "child_process";
 import { useRouter } from "next/router";
 import { Configuration, OpenAIApi } from "openai";
 import ReactPlayer from "react-player";
+import zscores from "../helpers/zscores";
 import { default as sample } from "../sampleData/scores";
 
 type Transcript = Array<{
@@ -20,14 +21,19 @@ const Watch: NextPage = ({
   transcript,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const router = useRouter();
-  // console.log(transcript);
+
   return (
-    <div>
-      <ReactPlayer
-        url={`https://youtube.com/watch?v=${router.query.v}`}
-        key={process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}
-      />
-      {JSON.stringify(transcript)}
+    <div className="container p-5 vh-100 w-100">
+      <div className="row w-100 h-100">
+        <div className="col w-50">
+          <ReactPlayer
+            url={`https://youtube.com/watch?v=${router.query.v}`}
+            key={process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}
+            width="100%"
+          />
+        </div>
+        <div className="col w-50">{JSON.stringify(transcript)}</div>
+      </div>
     </div>
   );
 };
@@ -66,30 +72,12 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   // sample for dev
   const transcript: Transcript = sample;
-  
+
   return {
     props: {
-      transcript
+      transcript,
     },
   };
 };
-
-/**
- * calculate the z-score of each score by normalizing with mean and standard deviation
- */
-function zscore(scores: Array<number>) {
-  const size = scores.length;
-  const total = scores.reduce((acc, score) => acc + score, 0);
-  const mean = total / size;
-
-  const standardDeviation = Math.sqrt(
-    scores.reduce((acc, score) => acc + Math.pow(score - mean, 2), 0) / size
-  );
-
-  // might need to add by lowest value to start at zero for colors or smthn? idk
-  const zscores = scores.map((score) => (score - mean) / standardDeviation);
-
-  return zscores;
-}
 
 export default Watch;

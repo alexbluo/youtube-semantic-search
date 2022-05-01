@@ -32,12 +32,15 @@ const Watch: NextPage = ({
             width="100%"
           />
         </div>
-        <div className="col w-50">{JSON.stringify(transcript)}</div>
+        <div className="col w-50">
+          
+        </div>
       </div>
     </div>
   );
 };
 
+// TODO: keep transcript stuff, move zscores and openai to client side so different queries can be made?
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
@@ -49,30 +52,30 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     context.query.v as string,
   ]);
 
-  const transcript: Transcript = JSON.parse(pyscript.stdout.toString());
+  // const transcript: Transcript = JSON.parse(pyscript.stdout.toString());
 
-  for (let i = 0; i < transcript.length; i += 200) {
-    // 200 is the maximum number of documents allowed per query
-    const slice = transcript.slice(i, i + 200);
-    // extract the text property from slice
-    const documents = slice.map(({ text }) => text);
+  // for (let i = 0; i < transcript.length; i += 200) {
+  //   // 200 is the maximum number of documents allowed per query
+  //   const slice = transcript.slice(i, i + 200);
+  //   // extract the text property from slice
+  //   const documents = slice.map(({ text }) => text);
 
-    const {
-      // shorthand for response.data.data
-      data: { data },
-    } = await openai.createSearch("babbage", {
-      documents: documents,
-      query: "hacking",
-    });
+  //   const {
+  //     // shorthand for response.data.data
+  //     data: { data },
+  //   } = await openai.createSearch("babbage", {
+  //     documents: documents,
+  //     query: "language",
+  //   });
 
-    // calculate z scores and assign to each corresponding transcript section
-    const zscores = zscore(data!.map(({ score }) => score!));
-    zscores.forEach((zs, idx) => (transcript[idx + i].zscore = zs));
-  }
+  //   // calculate z scores and assign to each corresponding transcript section
+  //   const zscores = zscore(data!.map(({ score }) => score!));
+  //   zscores.forEach((zs, idx) => (transcript[idx + i].zscore = zs));
+  // }
 
   // sample for dev
-  // const transcript: Transcript = sample;
-
+  const transcript: Transcript = sample;
+  console.log(transcript)
   return {
     props: {
       transcript,

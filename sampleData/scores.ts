@@ -1,6 +1,7 @@
 /**
  * video id: cuHDQhDhvPE
- * last commit confirmed working for both sample and real: 9c76b3dabd8fc61db2d68e9151ac69a191d44520
+ * query: language
+ * last commit confirmed working for both sample and real: 39a474092bd307e79ec5e871e188d8811800b9b9
  */
 const scores = [
   {

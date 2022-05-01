@@ -14,6 +14,6 @@ const zscore = (scores: Array<number>) => {
   const zscores = scores.map((score) => (score - mean) / standardDeviation);
 
   return zscores;
-}
+};
 
 export default zscore;

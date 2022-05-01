@@ -14,21 +14,16 @@ const Home: NextPage = () => {
   async function handleLinkInput(event: ChangeEvent<HTMLInputElement>) {
     const value = event.target.value;
     setLink(value);
-
+    
+    setIsValidLink(false) ;
     // in case text is inputted and fully deleted
-    if (value.length === 0) {
-      setIsValidLink(false);
-      return;
-    }
-
+    if (value.length === 0) return;
+  
     // regex to match all kinds of youtube urls
     const linkIsYoutubeURL = !!value.match(
       /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/
     );
-    if (!linkIsYoutubeURL) {
-      setIsValidLink(false);
-      return;
-    }
+    if (!linkIsYoutubeURL) return;
 
     // get video id from url query params after normalizing to add https header so URL() works
     const params = new URL(normalizeURL(value)).searchParams;
@@ -38,10 +33,7 @@ const Home: NextPage = () => {
     const res = await axios.get(
       `https://www.googleapis.com/youtube/v3/videos?id=${videoID}&key=${process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}`
     );
-    if (res.data.items.length === 0) {
-      setIsValidLink(false);
-      return;
-    }
+    if (res.data.items.length === 0) return;
 
     setIsValidLink(true);
   }

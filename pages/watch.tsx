@@ -17,40 +17,59 @@ type Transcript = Array<{
   zscore?: number;
 }>;
 
-const Watch: NextPage = ({
+const Watch = ({
   transcript,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const router = useRouter();
 
   return (
-    <div className="container p-5 vh-100 w-100">
-      <div className="row w-100 h-100">
-        <div className="col w-50">
-          <ReactPlayer
-            url={`https://youtube.com/watch?v=${router.query.v}`}
-            key={process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}
-            width="100%"
-          />
+    <div className="container p-5 w-100">
+      <div className="d-flex gap-4">
+        <div className="w-75">
+          <div className="ratio ratio-16x9">
+            <ReactPlayer
+              url={`https://youtube.com/watch?v=${router.query.v}`}
+              key={process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}
+              width="100%"
+              height="100%"
+              controls={true}
+            />
+          </div>
         </div>
-        <div className="col w-50">
-          
-        </div>
+        <ul className="w-25 list-group text-wrap">
+          {transcript.map((obj, i) => (
+            <li
+              className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+              key={i}
+            >
+              <div>
+                {obj.text}
+                <br />
+                {obj.zscore}
+              </div>
+              <span className="badge bg-primary rounded-pill">
+                {obj.start.toFixed(2).replace(".", ":")}
+              </span>
+              <br />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
 };
 
 // TODO: keep transcript stuff, move zscores and openai to client side so different queries can be made?
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
-  });
-  const openai = new OpenAIApi(configuration);
+export const getServerSideProps = async (context) => {
+  // const configuration = new Configuration({
+  //   apiKey: process.env.OPENAI_API_KEY,
+  // });
+  // const openai = new OpenAIApi(configuration);
 
-  const pyscript = spawnSync("python", [
-    "./scripts/transcript.py",
-    context.query.v as string,
-  ]);
+  // const pyscript = spawnSync("python", [
+  //   "./scripts/transcript.py",
+  //   context.query.v as string,
+  // ]);
 
   // const transcript: Transcript = JSON.parse(pyscript.stdout.toString());
 
@@ -75,10 +94,10 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   // sample for dev
   const transcript: Transcript = sample;
-  console.log(transcript)
+  console.log(transcript);
   return {
     props: {
-      transcript,
+      transcript: transcript,
     },
   };
 };

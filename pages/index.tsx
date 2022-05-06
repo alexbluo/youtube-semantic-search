@@ -11,14 +11,14 @@ const Home: NextPage = () => {
   const [link, setLink] = useState("");
   const [isValidLink, setIsValidLink] = useState(false);
 
-  async function handleLinkInput(event: ChangeEvent<HTMLInputElement>) {
+  const handleLinkInput = async (event: ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     setLink(value);
-    
-    setIsValidLink(false) ;
+
+    setIsValidLink(false);
     // in case text is inputted and fully deleted
     if (value.length === 0) return;
-  
+
     // regex to match all kinds of youtube urls
     const linkIsYoutubeURL = !!value.match(
       /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/
@@ -36,9 +36,9 @@ const Home: NextPage = () => {
     if (res.data.items.length === 0) return;
 
     setIsValidLink(true);
-  }
+  };
 
-  function handleLinkSubmit(event: FormEvent<HTMLFormElement>) {
+  const handleLinkSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!isValidLink) return;
 
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
     const params = new URL(normalizeURL(link)).searchParams;
     const videoID = params.get("v");
     router.push({ pathname: "/watch", query: { v: videoID } });
-  }
+  };
 
   return (
     <div className="container py-5 w-100 vh-100">
@@ -78,14 +78,9 @@ const Home: NextPage = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="currentColor"
-                className="bi bi-arrow-return-right"
                 viewBox="0 0 16 16"
               >
-                <path
-                  fillRule="evenodd"
-                  d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"
-                />
+                <path d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z" />
               </svg>
             </button>
           </form>
